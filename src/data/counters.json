@@ -1,0 +1,2426 @@
+[
+  {
+    "enemy": "Ana",
+    "you": "Bastion",
+    "score": -1
+  },
+  {
+    "enemy": "Ana",
+    "you": "Mercy",
+    "score": -1
+  },
+  {
+    "enemy": "Ana",
+    "you": "Ana",
+    "score": 0
+  },
+  {
+    "enemy": "Ana",
+    "you": "Lúcio",
+    "score": 0
+  },
+  {
+    "enemy": "Ana",
+    "you": "Symmetra",
+    "score": 0
+  },
+  {
+    "enemy": "Ana",
+    "you": "D.Va",
+    "score": 1
+  },
+  {
+    "enemy": "Ana",
+    "you": "Genji",
+    "score": 1
+  },
+  {
+    "enemy": "Ana",
+    "you": "Hanzo",
+    "score": 1
+  },
+  {
+    "enemy": "Ana",
+    "you": "Junkrat",
+    "score": 1
+  },
+  {
+    "enemy": "Ana",
+    "you": "Pharah",
+    "score": 1
+  },
+  {
+    "enemy": "Ana",
+    "you": "Reinhardt",
+    "score": 1
+  },
+  {
+    "enemy": "Ana",
+    "you": "Soldier: 76",
+    "score": 1
+  },
+  {
+    "enemy": "Ana",
+    "you": "Torbjörn",
+    "score": 1
+  },
+  {
+    "enemy": "Ana",
+    "you": "Widowmaker",
+    "score": 1
+  },
+  {
+    "enemy": "Ana",
+    "you": "Winston",
+    "score": 1
+  },
+  {
+    "enemy": "Ana",
+    "you": "Zarya",
+    "score": 1
+  },
+  {
+    "enemy": "Ana",
+    "you": "Zenyatta",
+    "score": 1
+  },
+  {
+    "enemy": "Ana",
+    "you": "McCree",
+    "score": 2
+  },
+  {
+    "enemy": "Ana",
+    "you": "Mei",
+    "score": 2
+  },
+  {
+    "enemy": "Ana",
+    "you": "Reaper",
+    "score": 2
+  },
+  {
+    "enemy": "Ana",
+    "you": "Roadhog",
+    "score": 2
+  },
+  {
+    "enemy": "Ana",
+    "you": "Tracer",
+    "score": 2
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Mercy",
+    "score": -2
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Reinhardt",
+    "score": -2
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Lúcio",
+    "score": -1
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Zenyatta",
+    "score": -1
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Bastion",
+    "score": 0
+  },
+  {
+    "enemy": "Bastion",
+    "you": "McCree",
+    "score": 0
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Mei",
+    "score": 0
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Torbjörn",
+    "score": 0
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Ana",
+    "score": 1
+  },
+  {
+    "enemy": "Bastion",
+    "you": "D.Va",
+    "score": 1
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Reaper",
+    "score": 1
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Roadhog",
+    "score": 1
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Soldier: 76",
+    "score": 1
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Symmetra",
+    "score": 1
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Winston",
+    "score": 1
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Zarya",
+    "score": 1
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Genji",
+    "score": 2
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Hanzo",
+    "score": 2
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Junkrat",
+    "score": 2
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Pharah",
+    "score": 2
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Tracer",
+    "score": 2
+  },
+  {
+    "enemy": "Bastion",
+    "you": "Widowmaker",
+    "score": 2
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Hanzo",
+    "score": -2
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Mercy",
+    "score": -2
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Symmetra",
+    "score": -2
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Ana",
+    "score": -1
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Bastion",
+    "score": -1
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Lúcio",
+    "score": -1
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Torbjörn",
+    "score": -1
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Widowmaker",
+    "score": -1
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Winston",
+    "score": -1
+  },
+  {
+    "enemy": "D.Va",
+    "you": "D.Va",
+    "score": 0
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Genji",
+    "score": 0,
+    "Questions": "Not sure who wins"
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Soldier: 76",
+    "score": 0
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Junkrat",
+    "score": 1
+  },
+  {
+    "enemy": "D.Va",
+    "you": "McCree",
+    "score": 1
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Pharah",
+    "score": 1
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Reaper",
+    "score": 1
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Reinhardt",
+    "score": 1
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Zarya",
+    "score": 1
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Zenyatta",
+    "score": 1
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Mei",
+    "score": 2
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Roadhog",
+    "score": 2
+  },
+  {
+    "enemy": "D.Va",
+    "you": "Tracer",
+    "score": 2
+  },
+  {
+    "enemy": "Genji",
+    "you": "Bastion",
+    "score": -2
+  },
+  {
+    "enemy": "Genji",
+    "you": "Hanzo",
+    "score": -2
+  },
+  {
+    "enemy": "Genji",
+    "you": "Widowmaker",
+    "score": -2
+  },
+  {
+    "enemy": "Genji",
+    "you": "Zenyatta",
+    "score": -2
+  },
+  {
+    "enemy": "Genji",
+    "you": "Ana",
+    "score": -1
+  },
+  {
+    "enemy": "Genji",
+    "you": "Mercy",
+    "score": -1
+  },
+  {
+    "enemy": "Genji",
+    "you": "Reaper",
+    "score": -1
+  },
+  {
+    "enemy": "Genji",
+    "you": "Reinhardt",
+    "score": -1
+  },
+  {
+    "enemy": "Genji",
+    "you": "Tracer",
+    "score": -1
+  },
+  {
+    "enemy": "Genji",
+    "you": "D.Va",
+    "score": 0,
+    "Questions": "Not sure"
+  },
+  {
+    "enemy": "Genji",
+    "you": "Genji",
+    "score": 0
+  },
+  {
+    "enemy": "Genji",
+    "you": "Lúcio",
+    "score": 0
+  },
+  {
+    "enemy": "Genji",
+    "you": "Roadhog",
+    "score": 0
+  },
+  {
+    "enemy": "Genji",
+    "you": "Soldier: 76",
+    "score": 0
+  },
+  {
+    "enemy": "Genji",
+    "you": "Zarya",
+    "score": 0,
+    "Questions": "Not sure"
+  },
+  {
+    "enemy": "Genji",
+    "you": "Junkrat",
+    "score": 1
+  },
+  {
+    "enemy": "Genji",
+    "you": "McCree",
+    "score": 1
+  },
+  {
+    "enemy": "Genji",
+    "you": "Mei",
+    "score": 1
+  },
+  {
+    "enemy": "Genji",
+    "you": "Pharah",
+    "score": 1
+  },
+  {
+    "enemy": "Genji",
+    "you": "Torbjörn",
+    "score": 1
+  },
+  {
+    "enemy": "Genji",
+    "you": "Symmetra",
+    "score": 2
+  },
+  {
+    "enemy": "Genji",
+    "you": "Winston",
+    "score": 2
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Bastion",
+    "score": -2
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Junkrat",
+    "score": -2
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Mercy",
+    "score": -2
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Torbjörn",
+    "score": -2
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Ana",
+    "score": -1
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Lúcio",
+    "score": -1
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Reinhardt",
+    "score": -1
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Symmetra",
+    "score": -1
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Zenyatta",
+    "score": -1
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Hanzo",
+    "score": 0
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Mei",
+    "score": 0
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Roadhog",
+    "score": 0
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "McCree",
+    "score": 1
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Pharah",
+    "score": 1
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Soldier: 76",
+    "score": 1
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Zarya",
+    "score": 1
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "D.Va",
+    "score": 2
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Genji",
+    "score": 2
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Reaper",
+    "score": 2
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Tracer",
+    "score": 2
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Widowmaker",
+    "score": 2
+  },
+  {
+    "enemy": "Hanzo",
+    "you": "Winston",
+    "score": 2
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Bastion",
+    "score": -2
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "McCree",
+    "score": -2
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Mei",
+    "score": -2
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Mercy",
+    "score": -2
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Symmetra",
+    "score": -2
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Torbjörn",
+    "score": -2
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Ana",
+    "score": -1
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "D.Va",
+    "score": -1
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Genji",
+    "score": -1
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Lúcio",
+    "score": -1
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Reaper",
+    "score": -1
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Soldier: 76",
+    "score": -1
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Zenyatta",
+    "score": -1
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Junkrat",
+    "score": 0
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Reinhardt",
+    "score": 0
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Tracer",
+    "score": 0
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Zarya",
+    "score": 0
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Roadhog",
+    "score": 1
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Winston",
+    "score": 1
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Hanzo",
+    "score": 2
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Pharah",
+    "score": 2
+  },
+  {
+    "enemy": "Junkrat",
+    "you": "Widowmaker",
+    "score": 2
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Mercy",
+    "score": -2
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Lúcio",
+    "score": 0
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Zenyatta",
+    "score": 0
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Ana",
+    "score": 1
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "D.Va",
+    "score": 1
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Genji",
+    "score": 1
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Hanzo",
+    "score": 1
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Junkrat",
+    "score": 1
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Mei",
+    "score": 1
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Reinhardt",
+    "score": 1
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Soldier: 76",
+    "score": 1
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Symmetra",
+    "score": 1
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Torbjörn",
+    "score": 1
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Widowmaker",
+    "score": 1
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Zarya",
+    "score": 1
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Bastion",
+    "score": 2
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "McCree",
+    "score": 2
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Pharah",
+    "score": 2
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Reaper",
+    "score": 2
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Roadhog",
+    "score": 2
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Tracer",
+    "score": 2
+  },
+  {
+    "enemy": "Lúcio",
+    "you": "Winston",
+    "score": 2
+  },
+  {
+    "enemy": "McCree",
+    "you": "Ana",
+    "score": -2
+  },
+  {
+    "enemy": "McCree",
+    "you": "Lúcio",
+    "score": -2
+  },
+  {
+    "enemy": "McCree",
+    "you": "Mercy",
+    "score": -2
+  },
+  {
+    "enemy": "McCree",
+    "you": "Pharah",
+    "score": -2
+  },
+  {
+    "enemy": "McCree",
+    "you": "Zenyatta",
+    "score": -2
+  },
+  {
+    "enemy": "McCree",
+    "you": "D.Va",
+    "score": -1
+  },
+  {
+    "enemy": "McCree",
+    "you": "Reaper",
+    "score": -1
+  },
+  {
+    "enemy": "McCree",
+    "you": "Reinhardt",
+    "score": -1
+  },
+  {
+    "enemy": "McCree",
+    "you": "Roadhog",
+    "score": -1
+  },
+  {
+    "enemy": "McCree",
+    "you": "Symmetra",
+    "score": -1
+  },
+  {
+    "enemy": "McCree",
+    "you": "Torbjörn",
+    "score": -1
+  },
+  {
+    "enemy": "McCree",
+    "you": "Winston",
+    "score": -1
+  },
+  {
+    "enemy": "McCree",
+    "you": "McCree",
+    "score": 0
+  },
+  {
+    "enemy": "McCree",
+    "you": "Mei",
+    "score": 0
+  },
+  {
+    "enemy": "McCree",
+    "you": "Bastion",
+    "score": 1
+  },
+  {
+    "enemy": "McCree",
+    "you": "Genji",
+    "score": 1
+  },
+  {
+    "enemy": "McCree",
+    "you": "Hanzo",
+    "score": 1
+  },
+  {
+    "enemy": "McCree",
+    "you": "Tracer",
+    "score": 1
+  },
+  {
+    "enemy": "McCree",
+    "you": "Widowmaker",
+    "score": 1
+  },
+  {
+    "enemy": "McCree",
+    "you": "Zarya",
+    "score": 1
+  },
+  {
+    "enemy": "McCree",
+    "you": "Junkrat",
+    "score": 2
+  },
+  {
+    "enemy": "McCree",
+    "you": "Soldier: 76",
+    "score": 2
+  },
+  {
+    "enemy": "Mei",
+    "you": "D.Va",
+    "score": -2
+  },
+  {
+    "enemy": "Mei",
+    "you": "Mercy",
+    "score": -2
+  },
+  {
+    "enemy": "Mei",
+    "you": "Roadhog",
+    "score": -2
+  },
+  {
+    "enemy": "Mei",
+    "you": "Ana",
+    "score": -1
+  },
+  {
+    "enemy": "Mei",
+    "you": "Genji",
+    "score": -1
+  },
+  {
+    "enemy": "Mei",
+    "you": "Lúcio",
+    "score": -1
+  },
+  {
+    "enemy": "Mei",
+    "you": "Reinhardt",
+    "score": -1
+  },
+  {
+    "enemy": "Mei",
+    "you": "Soldier: 76",
+    "score": -1
+  },
+  {
+    "enemy": "Mei",
+    "you": "Zarya",
+    "score": -1
+  },
+  {
+    "enemy": "Mei",
+    "you": "Zenyatta",
+    "score": -1
+  },
+  {
+    "enemy": "Mei",
+    "you": "Bastion",
+    "score": 0
+  },
+  {
+    "enemy": "Mei",
+    "you": "McCree",
+    "score": 0
+  },
+  {
+    "enemy": "Mei",
+    "you": "Mei",
+    "score": 0
+  },
+  {
+    "enemy": "Mei",
+    "you": "Symmetra",
+    "score": 0
+  },
+  {
+    "enemy": "Mei",
+    "you": "Hanzo",
+    "score": 1
+  },
+  {
+    "enemy": "Mei",
+    "you": "Reaper",
+    "score": 1
+  },
+  {
+    "enemy": "Mei",
+    "you": "Torbjörn",
+    "score": 1
+  },
+  {
+    "enemy": "Mei",
+    "you": "Tracer",
+    "score": 1
+  },
+  {
+    "enemy": "Mei",
+    "you": "Widowmaker",
+    "score": 1
+  },
+  {
+    "enemy": "Mei",
+    "you": "Winston",
+    "score": 1
+  },
+  {
+    "enemy": "Mei",
+    "you": "Junkrat",
+    "score": 2
+  },
+  {
+    "enemy": "Mei",
+    "you": "Pharah",
+    "score": 2
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Ana",
+    "score": 0
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Lúcio",
+    "score": 0
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Mercy",
+    "score": 0
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Zenyatta",
+    "score": 0
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Bastion",
+    "score": 1
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Genji",
+    "score": 1
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Junkrat",
+    "score": 1
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Mei",
+    "score": 1
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Pharah",
+    "score": 1
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Reaper",
+    "score": 1
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Reinhardt",
+    "score": 1
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Roadhog",
+    "score": 1
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Soldier: 76",
+    "score": 1
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Symmetra",
+    "score": 1
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Torbjörn",
+    "score": 1
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Tracer",
+    "score": 1
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Winston",
+    "score": 1
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Zarya",
+    "score": 1
+  },
+  {
+    "enemy": "Mercy",
+    "you": "D.Va",
+    "score": 2
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Hanzo",
+    "score": 2
+  },
+  {
+    "enemy": "Mercy",
+    "you": "McCree",
+    "score": 2
+  },
+  {
+    "enemy": "Mercy",
+    "you": "Widowmaker",
+    "score": 2
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Bastion",
+    "score": -2
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Mei",
+    "score": -2
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Reinhardt",
+    "score": -2
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Symmetra",
+    "score": -2
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Torbjörn",
+    "score": -2
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Zarya",
+    "score": -2
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Genji",
+    "score": -1
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Mercy",
+    "score": -1
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Winston",
+    "score": -1
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Zenyatta",
+    "score": -1
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Pharah",
+    "score": 0
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Ana",
+    "score": 1
+  },
+  {
+    "enemy": "Pharah",
+    "you": "D.Va",
+    "score": 1
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Reaper",
+    "score": 1
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Roadhog",
+    "score": 1
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Soldier: 76",
+    "score": 2
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Tracer",
+    "score": 1
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Widowmaker",
+    "score": 1
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Hanzo",
+    "score": 2
+  },
+  {
+    "enemy": "Pharah",
+    "you": "McCree",
+    "score": 2
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Junkrat",
+    "score": -2
+  },
+  {
+    "enemy": "Pharah",
+    "you": "Lúcio",
+    "score": -2
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Hanzo",
+    "score": -2
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Lúcio",
+    "score": -2
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Reinhardt",
+    "score": -2
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Winston",
+    "score": -2
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Zarya",
+    "score": -2
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Zenyatta",
+    "score": -2
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Bastion",
+    "score": -1
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Mercy",
+    "score": -1
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Symmetra",
+    "score": -1
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Torbjörn",
+    "score": -1
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Tracer",
+    "score": -1
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Widowmaker",
+    "score": -1
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Reaper",
+    "score": 0
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Soldier: 76",
+    "score": 0
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Ana",
+    "score": 1
+  },
+  {
+    "enemy": "Reaper",
+    "you": "D.Va",
+    "score": 1
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Genji",
+    "score": 1
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Junkrat",
+    "score": 1
+  },
+  {
+    "enemy": "Reaper",
+    "you": "McCree",
+    "score": 1
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Pharah",
+    "score": 1
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Mei",
+    "score": 2
+  },
+  {
+    "enemy": "Reaper",
+    "you": "Roadhog",
+    "score": 2
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Ana",
+    "score": -1
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "D.Va",
+    "score": -1
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Lúcio",
+    "score": -1
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Mercy",
+    "score": -1
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Symmetra",
+    "score": -1
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Torbjörn",
+    "score": -1
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Reinhardt",
+    "score": 0
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "McCree",
+    "score": 1
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Mei",
+    "score": 1
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Roadhog",
+    "score": 1
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Soldier: 76",
+    "score": 1
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Winston",
+    "score": 1
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Zarya",
+    "score": 1
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Zenyatta",
+    "score": 1
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Bastion",
+    "score": 2
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Genji",
+    "score": 2
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Hanzo",
+    "score": 2
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Junkrat",
+    "score": 2
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Pharah",
+    "score": 2
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Reaper",
+    "score": 2
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Tracer",
+    "score": 2
+  },
+  {
+    "enemy": "Reinhardt",
+    "you": "Widowmaker",
+    "score": 2
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "D.Va",
+    "score": -2
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Reaper",
+    "score": -2
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Lúcio",
+    "score": -1
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Mercy",
+    "score": -1
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Pharah",
+    "score": -1
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Reinhardt",
+    "score": -1
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Symmetra",
+    "score": -1
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Tracer",
+    "score": -1
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Bastion",
+    "score": 0
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Junkrat",
+    "score": 0
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Roadhog",
+    "score": 0
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Ana",
+    "score": 1
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Genji",
+    "score": 1
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Hanzo",
+    "score": 1
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "McCree",
+    "score": 1
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Soldier: 76",
+    "score": 1
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Widowmaker",
+    "score": 1
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Mei",
+    "score": 2
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Zarya",
+    "score": 2
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Zenyatta",
+    "score": 2
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Torbjörn",
+    "score": -1
+  },
+  {
+    "enemy": "Roadhog",
+    "you": "Winston",
+    "score": -2
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "McCree",
+    "score": -2
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Torbjörn",
+    "score": -2
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Hanzo",
+    "score": -1
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Pharah",
+    "score": -1
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Soldier: 76",
+    "score": 0
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Ana",
+    "score": 1
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Genji",
+    "score": 1
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Junkrat",
+    "score": 1
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Mei",
+    "score": 1
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Reinhardt",
+    "score": 1
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Roadhog",
+    "score": 1
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Tracer",
+    "score": 2
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Winston",
+    "score": 2
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Bastion",
+    "score": 0
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "D.Va",
+    "score": 1
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Lúcio",
+    "score": -1
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Mercy",
+    "score": -2
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Reaper",
+    "score": 1
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Symmetra",
+    "score": -1
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Widowmaker",
+    "score": 0
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Zarya",
+    "score": 1
+  },
+  {
+    "enemy": "Soldier: 76",
+    "you": "Zenyatta",
+    "score": -1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Genji",
+    "score": -2
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Bastion",
+    "score": -1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Tracer",
+    "score": -1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Symmetra",
+    "score": 0
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Reinhardt",
+    "score": 1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Roadhog",
+    "score": 1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Winston",
+    "score": 1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Zarya",
+    "score": 1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Junkrat",
+    "score": 2
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Pharah",
+    "score": 2
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Ana",
+    "score": -1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "D.Va",
+    "score": 2
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Hanzo",
+    "score": -1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Lúcio",
+    "score": 1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "McCree",
+    "score": 1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Mei",
+    "score": 1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Mercy",
+    "score": -1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Reaper",
+    "score": 1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Soldier: 76",
+    "score": 1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Torbjörn",
+    "score": 0
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Widowmaker",
+    "score": 1
+  },
+  {
+    "enemy": "Symmetra",
+    "you": "Zenyatta",
+    "score": 1
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Genji",
+    "score": -2
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Mei",
+    "score": -1
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Tracer",
+    "score": -1
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Torbjörn",
+    "score": 0
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Ana",
+    "score": 1
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "D.Va",
+    "score": 1
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Reinhardt",
+    "score": 1
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Zarya",
+    "score": 1
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Hanzo",
+    "score": 2
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Junkrat",
+    "score": 2
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Pharah",
+    "score": 2
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Soldier: 76",
+    "score": 2
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Widowmaker",
+    "score": 2
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Bastion",
+    "score": 1
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Lúcio",
+    "score": -1
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "McCree",
+    "score": 1
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Mercy",
+    "score": -1
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Reaper",
+    "score": 0
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Roadhog",
+    "score": 1
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Symmetra",
+    "score": 0
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Winston",
+    "score": 2
+  },
+  {
+    "enemy": "Torbjörn",
+    "you": "Zenyatta",
+    "score": 1
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Ana",
+    "score": -2
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Bastion",
+    "score": -2
+  },
+  {
+    "enemy": "Tracer",
+    "you": "D.Va",
+    "score": -2
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Reinhardt",
+    "score": -2
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Soldier: 76",
+    "score": -2
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Widowmaker",
+    "score": -2
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Zenyatta",
+    "score": -2
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Mei",
+    "score": -1
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Mercy",
+    "score": -1
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Pharah",
+    "score": -1
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Tracer",
+    "score": 0
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Genji",
+    "score": 1
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Hanzo",
+    "score": 1
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Roadhog",
+    "score": 1
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Symmetra",
+    "score": 1
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Torbjörn",
+    "score": 1
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Winston",
+    "score": 1
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Zarya",
+    "score": 1
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Junkrat",
+    "score": 2
+  },
+  {
+    "enemy": "Tracer",
+    "you": "McCree",
+    "score": 2
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Lúcio",
+    "score": -1
+  },
+  {
+    "enemy": "Tracer",
+    "you": "Reaper",
+    "score": 0
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Bastion",
+    "score": -2
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Mercy",
+    "score": -2
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Torbjörn",
+    "score": -2
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Zenyatta",
+    "score": -2
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Ana",
+    "score": -1
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Mei",
+    "score": -1
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Roadhog",
+    "score": -1
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Widowmaker",
+    "score": 0
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "D.Va",
+    "score": 1
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "McCree",
+    "score": 1
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Reaper",
+    "score": 1
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Genji",
+    "score": 2
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Hanzo",
+    "score": 2
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Tracer",
+    "score": 2
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Winston",
+    "score": 2
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Junkrat",
+    "score": -2
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Lúcio",
+    "score": -1
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Pharah",
+    "score": 0
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Reinhardt",
+    "score": -1
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Soldier: 76",
+    "score": 1
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Symmetra",
+    "score": -2
+  },
+  {
+    "enemy": "Widowmaker",
+    "you": "Zarya",
+    "score": -1
+  },
+  {
+    "enemy": "Winston",
+    "you": "Genji",
+    "score": -2
+  },
+  {
+    "enemy": "Winston",
+    "you": "Hanzo",
+    "score": -2
+  },
+  {
+    "enemy": "Winston",
+    "you": "Soldier: 76",
+    "score": -2
+  },
+  {
+    "enemy": "Winston",
+    "you": "Widowmaker",
+    "score": -2
+  },
+  {
+    "enemy": "Winston",
+    "you": "Ana",
+    "score": -1
+  },
+  {
+    "enemy": "Winston",
+    "you": "Lúcio",
+    "score": -1
+  },
+  {
+    "enemy": "Winston",
+    "you": "Reinhardt",
+    "score": -1
+  },
+  {
+    "enemy": "Winston",
+    "you": "Tracer",
+    "score": -1
+  },
+  {
+    "enemy": "Winston",
+    "you": "Winston",
+    "score": 0
+  },
+  {
+    "enemy": "Winston",
+    "you": "D.Va",
+    "score": 1
+  },
+  {
+    "enemy": "Winston",
+    "you": "McCree",
+    "score": 1
+  },
+  {
+    "enemy": "Winston",
+    "you": "Pharah",
+    "score": 1
+  },
+  {
+    "enemy": "Winston",
+    "you": "Symmetra",
+    "score": 1
+  },
+  {
+    "enemy": "Winston",
+    "you": "Torbjörn",
+    "score": 1
+  },
+  {
+    "enemy": "Winston",
+    "you": "Zarya",
+    "score": 1
+  },
+  {
+    "enemy": "Winston",
+    "you": "Zenyatta",
+    "score": 1
+  },
+  {
+    "enemy": "Winston",
+    "you": "Junkrat",
+    "score": 2
+  },
+  {
+    "enemy": "Winston",
+    "you": "Mei",
+    "score": 2
+  },
+  {
+    "enemy": "Winston",
+    "you": "Reaper",
+    "score": 2
+  },
+  {
+    "enemy": "Winston",
+    "you": "Bastion",
+    "score": 1
+  },
+  {
+    "enemy": "Winston",
+    "you": "Mercy",
+    "score": -2
+  },
+  {
+    "enemy": "Winston",
+    "you": "Roadhog",
+    "score": 2
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Ana",
+    "score": -1
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Zarya",
+    "score": 0
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Bastion",
+    "score": 1
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Genji",
+    "score": 1
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Lúcio",
+    "score": 1
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Mei",
+    "score": 1
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Tracer",
+    "score": 1
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Winston",
+    "score": 1
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Zenyatta",
+    "score": 1
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Pharah",
+    "score": 2
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Reaper",
+    "score": 2
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Reinhardt",
+    "score": 2
+  },
+  {
+    "enemy": "Zarya",
+    "you": "D.Va",
+    "score": 1
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Hanzo",
+    "score": 1
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Junkrat",
+    "score": 0
+  },
+  {
+    "enemy": "Zarya",
+    "you": "McCree",
+    "score": 0
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Mercy",
+    "score": -1
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Roadhog",
+    "score": 0
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Soldier: 76",
+    "score": 0
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Symmetra",
+    "score": 0
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Torbjörn",
+    "score": -1
+  },
+  {
+    "enemy": "Zarya",
+    "you": "Widowmaker",
+    "score": 1
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "D.Va",
+    "score": -1
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Reinhardt",
+    "score": -1
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Zarya",
+    "score": -1
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Zenyatta",
+    "score": 0
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Hanzo",
+    "score": 1
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Junkrat",
+    "score": 1
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Pharah",
+    "score": 1
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Roadhog",
+    "score": 1,
+    "Explanation": "Although Zenyatta's damage orb can quickly chew through Roadhog's massive health, Roadhog can hook and one-shot Zenyatta."
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Winston",
+    "score": 1
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Ana",
+    "score": 2
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Genji",
+    "score": 2
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "McCree",
+    "score": 2
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Reaper",
+    "score": 2
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Tracer",
+    "score": 2
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Widowmaker",
+    "score": 2
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Bastion",
+    "score": 1
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Lúcio",
+    "score": 0
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Mei",
+    "score": 1
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Mercy",
+    "score": -1
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Soldier: 76",
+    "score": 1
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Symmetra",
+    "score": 0
+  },
+  {
+    "enemy": "Zenyatta",
+    "you": "Torbjörn",
+    "score": 2
+  }
+]

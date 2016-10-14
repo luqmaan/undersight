@@ -1,0 +1,112 @@
+[
+  {
+    "name": "Soldier: 76",
+    "role": "Offense",
+    "icon": "soldier.png"
+  },
+  {
+    "name": "Reaper",
+    "role": "Offense",
+    "icon": "reaper.png"
+  },
+  {
+    "name": "Pharah",
+    "role": "Offense",
+    "icon": "pharah.png"
+  },
+  {
+    "name": "Genji",
+    "role": "Offense",
+    "icon": "genji.png"
+  },
+  {
+    "name": "McCree",
+    "role": "Offense",
+    "icon": "mccree.png"
+  },
+  {
+    "name": "Tracer",
+    "role": "Offense",
+    "icon": "tracertracer.png"
+  },
+  {
+    "name": "Bastion",
+    "role": "Defense",
+    "icon": "bastion.png"
+  },
+  {
+    "name": "Hanzo",
+    "role": "Defense",
+    "icon": "hanzo.png"
+  },
+  {
+    "name": "Junkrat",
+    "role": "Defense",
+    "icon": "junkrat.png"
+  },
+  {
+    "name": "Mei",
+    "role": "Defense",
+    "icon": "mei.png"
+  },
+  {
+    "name": "Torbjörn",
+    "role": "Defense",
+    "icon": "torbjorn.png"
+  },
+  {
+    "name": "Widowmaker",
+    "role": "Defense",
+    "icon": "widowmaker.png"
+  },
+  {
+    "name": "D.Va",
+    "role": "Tank",
+    "icon": "dva.png"
+  },
+  {
+    "name": "Reinhardt",
+    "role": "Tank",
+    "icon": "reinhardt.png"
+  },
+  {
+    "name": "Roadhog",
+    "role": "Tank",
+    "icon": "roadhog.png"
+  },
+  {
+    "name": "Winston",
+    "role": "Tank",
+    "icon": "winston.png"
+  },
+  {
+    "name": "Zarya",
+    "role": "Tank",
+    "icon": "zarya.png"
+  },
+  {
+    "name": "Ana",
+    "role": "Support",
+    "icon": "ana.png"
+  },
+  {
+    "name": "Lúcio",
+    "role": "Support",
+    "icon": "lucio.png"
+  },
+  {
+    "name": "Mercy",
+    "role": "Support",
+    "icon": "mercy.png"
+  },
+  {
+    "name": "Symmetra",
+    "role": "Support",
+    "icon": "symmetra.png"
+  },
+  {
+    "name": "Zenyatta",
+    "role": "Support",
+    "icon": "zenyatta.png"
+  }
+]
