@@ -3,6 +3,10 @@ import {Toolbar, NavItem, Space} from 'rebass';
 import classNames from 'classnames';
 import Icon from 'react-geomicons';
 
+import findIndex from 'lodash/findIndex';
+import findLastIndex from 'lodash/findLastIndex';
+import fp from 'lodash/fp';
+
 import heros from './data/heros.json';
 import counters from './data/counters.json';
 import {
@@ -15,7 +19,6 @@ import './App.css';
 
 function HeroIcon({name, onClick}) {
   const hero = name ? getHero(heros, name) : null;
-
   return (
     <div className={classNames("HeroIcon", {'Missing': !hero})} onClick={onClick}>
       <div className="HeroIconImage">
@@ -39,15 +42,24 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    // this.setState({enemyPicks: ['Hanzo', 'Soldier: 76']}, () => this.addPick('Zarya'));
+    this.setState({enemyPicks: ['Hanzo', 'Soldier: 76', 'Zarya']}, () => this.removePick('Zarya'));
   }
 
   addPick = (pick) => {
-    let enemyPicks = [...this.state.enemyPicks, pick];
-    this.setState({enemyPicks});
-    const topFourPicks = getTopFour(counters, enemyPicks);
+    const enemyPicks = [...this.state.enemyPicks, pick];
+    this.setState({enemyPicks}, () => this.recompute(enemyPicks));
+  }
+
+  removePick = (pick) => {
+    const enemyPicks = fp.pullAt(this.state.enemyPicks.lastIndexOf(pick))(this.state.enemyPicks);
+    this.setState({enemyPicks}, () => this.recompute(enemyPicks));
+  }
+
+  recompute() {
+    const topFourPicks = getTopFour(counters, this.state.enemyPicks);
     this.setState({topFourPicks});
-    const rolePicks = getAllRolePicks(counters, enemyPicks, heros);
+
+    const rolePicks = getAllRolePicks(counters, this.state.enemyPicks, heros);
     this.setState({rolePicks});
   }
 
@@ -61,7 +73,7 @@ export default class App extends Component {
           <div className="EnemyTeam">
             {[0, 1, 2, 3, 4, 5].map((i) => {
               const name = this.state.enemyPicks[i];
-              return <HeroIcon name={name} key={i} />;
+              return <HeroIcon name={name} key={i} onClick={() => this.removePick(name)} />;
             })}
           </div>
         </div>
