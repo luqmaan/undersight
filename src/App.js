@@ -13,6 +13,21 @@ import {
 } from './lib/undersight';
 import './App.css';
 
+function HeroIcon({name}) {
+  const hero = name ? getHero(heros, name) : null;
+
+  return (
+    <div className={classNames("HeroIcon", {'Missing': !hero})}>
+      <div className="HeroIconImage">
+        {hero && <img src={`heros/${hero.icon}`} />}
+      </div>
+      <div className="HeroIconName">
+        {hero ? hero.name : 'Choose'}
+      </div>
+    </div>
+  );
+}
+
 export default class App extends Component {
   constructor(props) {
     super(props);
@@ -24,7 +39,7 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({enemyPicks: ['Hanzo', 'Soldier: 76']}, () => this.addPick('Zarya'));
+    // this.setState({enemyPicks: ['Hanzo', 'Soldier: 76']}, () => this.addPick('Zarya'));
   }
 
   addPick = (pick) => {
@@ -43,49 +58,51 @@ export default class App extends Component {
           <div className="EnemyTeam">
             {[0, 1, 2, 3, 4, 5].map((i) => {
               const name = this.state.enemyPicks[i];
-              const hero = name ? getHero(heros, name) : null;
-              return (
-                <div key={i} className={classNames("HeroIcon", {'Missing': !hero})}>
-                  <div className="HeroIconImage">
-                    {hero && <img src={`heros/${hero.icon}`} />}
-                  </div>
-                  <div className="HeroIconName">
-                    {hero ? hero.name : 'Choose'}
-                  </div>
-                </div>
-              );
+              return <HeroIcon name={name} key={i} />;
             })}
           </div>
         </div>
         <div className="HeroPicker">
-          {heros.map((hero) => (
-            <div key={hero.name}className={classNames("HeroIcon", {'Missing': !hero})} onClick={() => this.addPick(hero.name)}>
-                <div className="HeroIconImage">
-                  {hero && <img src={`heros/${hero.icon}`} />}
-                </div>
-                <div className="HeroIconName">
-                  {hero.name}
-                </div>
+          {heros.map((hero) => <HeroIcon name={hero.name} key={hero.name} />)}
+        </div>
+        <div className="ResultsContainer">
+          <div className="Results">
+            <div className="Title">Top Counters</div>
+            <div className="Counters">
+              {this.state.topFourPicks.map((counter) => {
+                return (
+                  <div key={counter.name} className="Counter">
+                    <HeroIcon name={counter.name} />
+                    <div className="Score">{counter.score}</div>
+                  </div>
+                )
+              })}
             </div>
-          ))}
-        </div>
-        <div className="TopThree">
-          <h3>Top Four Counters</h3>
-          {this.state.topFourPicks.map((counter) => {
-            return (
-              <div key={counter.name}><strong>{counter.name}</strong> Score: {counter.score}</div>
-            )
-          })}
-        </div>
-        {this.state.rolePicks && (
-          <div className="TopThree">
-            <h3>By Role</h3>
-            <div>Offense: {this.state.rolePicks.Offense.name} {this.state.rolePicks.Offense.score}</div>
-            <div>Defense: {this.state.rolePicks.Defense.name} {this.state.rolePicks.Defense.score}</div>
-            <div>Tank: {this.state.rolePicks.Tank.name} {this.state.rolePicks.Tank.score}</div>
-            <div>Support: {this.state.rolePicks.Support.name} {this.state.rolePicks.Support.score}</div>
           </div>
-        )}
+          {this.state.rolePicks && (
+            <div className="Results">
+              <div className="Title">By Role</div>
+              <div className="Counters">
+                <div className="Counter">
+                  <HeroIcon name={this.state.rolePicks.Offense.name} />
+                  <div className="Score">{this.state.rolePicks.Offense.score}</div>
+                </div>
+                <div className="Counter">
+                  <HeroIcon name={this.state.rolePicks.Defense.name} />
+                  <div className="Score">{this.state.rolePicks.Defense.score}</div>
+                </div>
+                <div className="Counter">
+                  <HeroIcon name={this.state.rolePicks.Tank.name} />
+                  <div className="Score">{this.state.rolePicks.Tank.score}</div>
+                </div>
+                <div className="Counter">
+                  <HeroIcon name={this.state.rolePicks.Support.name} />
+                  <div className="Score">{this.state.rolePicks.Support.score}</div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
       </div>
     );
   }

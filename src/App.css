@@ -37,6 +37,42 @@
 .HeroPicker .HeroIcon {
     margin: 8px auto;
 }
+
+.ResultsContainer {
+    display: flex;
+}
+
+.Results {
+    background: #fff;
+    margin: 10px;
+    border: 1px solid #cecbcf;
+}
+.Results .Title {
+    margin: 0;
+    padding: 0;
+    background: #888aab;
+    color: #fff;
+    padding: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.Counters {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+.Counter .Score {
+    color: #596781;
+    font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+}
+.Counter .Role {
+    font-size: 0.6em;
+    text-align: center;
+    margin-top: 2px;
+}
+
 .HeroIcon {
     display: flex;
     width: 60px;
