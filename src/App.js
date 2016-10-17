@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Toolbar, NavItem, Space} from 'rebass';
 import classNames from 'classnames';
+import Icon from 'react-geomicons';
 
 import heros from './data/heros.json';
 import counters from './data/counters.json';
@@ -38,21 +39,23 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="EnemyTeam">
-          {[0, 1, 2, 3, 4, 5].map((i) => {
-            const name = this.state.enemyPicks[i];
-            const hero = name ? getHero(heros, name) : null;
-            return (
-              <div key={i}>
-                <div className="HeroIcon">
+        <div className="EnemyTeamWrapper">
+          <div className="EnemyTeam">
+            {[0, 1, 2, 3, 4, 5].map((i) => {
+              const name = this.state.enemyPicks[i];
+              const hero = name ? getHero(heros, name) : null;
+              return (
+                <div key={i} className={classNames("HeroIcon", {'Missing': !hero})}>
                   <div className="HeroIconImage">
-                    {name ? <img src={`heros/${hero.icon}`} /> : <div className="Unpicked"></div>}
+                    {hero && <img src={`heros/${hero.icon}`} />}
                   </div>
-                  <div className="HeroIconName">{name}</div>
+                  <div className="HeroIconName">
+                    {hero ? name : 'Choose'}
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            })}
+          </div>
         </div>
         <div className="HeroPicker">
           {heros.map((hero) => (

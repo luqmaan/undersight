@@ -1,17 +1,58 @@
 .App {
     padding-bottom: 300px;
 }
+.EnemyTeamWrapper {
+    margin: 10px auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    position: fixed;
+    bottom: 0;
+    width: 80vw;
+    min-width: 400px;
+}
 .EnemyTeam {
     position: fixed;
-    bottom: 10px;
+    bottom: 0;
     background-color: #fff;
     padding: 10px;
-    margin: 10px;
     border-radius: 5px;
     border: 1px solid #cecbcf;
     display: flex;
-    max-width: 90vw;
+    margin: auto;
+    position: relative;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .HeroIcon {
-    flex: 1;
+    display: flex;
+    width: 60px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.HeroIconName {
+    margin-top: 1px;
+    font-size: 0.6em;
+}
+.Missing .HeroIconImage {
+    border-style: dashed;
+}
+.Missing .HeroIconName {
+    color: #b1aeb2;
+}
+.HeroIconImage {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 1px solid #e5e5e6;
+    background: #f8f7f9;
+    overflow: hidden;
+}
+.HeroIcon img {
+    max-height: 100%;
+    width: auto;
+}
+.UnpickedIcon {
+    height: 55px;
 }
