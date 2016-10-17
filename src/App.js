@@ -13,11 +13,11 @@ import {
 } from './lib/undersight';
 import './App.css';
 
-function HeroIcon({name}) {
+function HeroIcon({name, onClick}) {
   const hero = name ? getHero(heros, name) : null;
 
   return (
-    <div className={classNames("HeroIcon", {'Missing': !hero})}>
+    <div className={classNames("HeroIcon", {'Missing': !hero})} onClick={onClick}>
       <div className="HeroIconImage">
         {hero && <img src={`heros/${hero.icon}`} />}
       </div>
@@ -63,22 +63,24 @@ export default class App extends Component {
           </div>
         </div>
         <div className="HeroPicker">
-          {heros.map((hero) => <HeroIcon name={hero.name} key={hero.name} />)}
+          {heros.map((hero) => <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />)}
         </div>
         <div className="ResultsContainer">
-          <div className="Results">
-            <div className="Title">Top Counters</div>
-            <div className="Counters">
-              {this.state.topFourPicks.map((counter) => {
-                return (
-                  <div key={counter.name} className="Counter">
-                    <HeroIcon name={counter.name} />
-                    <div className="Score">{counter.score}</div>
-                  </div>
-                )
-              })}
+          {this.state.topFourPicks.length > 0 && (
+            <div className="Results">
+              <div className="Title">Top Counters</div>
+              <div className="Counters">
+                {this.state.topFourPicks.map((counter) => {
+                  return (
+                    <div key={counter.name} className="Counter">
+                      <HeroIcon name={counter.name} />
+                      <div className="Score">{counter.score}</div>
+                    </div>
+                  )
+                })}
+              </div>
             </div>
-          </div>
+          )}
           {this.state.rolePicks && (
             <div className="Results">
               <div className="Title">By Role</div>
