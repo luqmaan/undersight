@@ -54,6 +54,9 @@ export default class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="HeroPicker">
+          {heros.map((hero) => <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />)}
+        </div>
         <div className="EnemyTeamWrapper">
           <div className="EnemyTeam">
             {[0, 1, 2, 3, 4, 5].map((i) => {
@@ -61,9 +64,6 @@ export default class App extends Component {
               return <HeroIcon name={name} key={i} />;
             })}
           </div>
-        </div>
-        <div className="HeroPicker">
-          {heros.map((hero) => <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />)}
         </div>
         <div className="ResultsContainer">
           {this.state.topFourPicks.length > 0 && (
