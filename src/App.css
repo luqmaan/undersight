@@ -1,6 +1,6 @@
 .App {
-    padding-bottom: 300px;
 }
+
 .EnemyTeamWrapper {
     margin: 10px auto;
     position: fixed;
@@ -24,6 +24,19 @@
     flex-direction: row;
     justify-content: space-between;
 }
+
+.HeroPicker {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    border: 1px solid #cecbcf;
+    padding: 10px;
+    justify-content: space-around;;
+    flex-wrap: wrap;
+}
+.HeroPicker .HeroIcon {
+    margin: 8px auto;
+}
 .HeroIcon {
     display: flex;
     width: 60px;
@@ -44,8 +57,8 @@
 .HeroIconImage {
     width: 55px;
     height: 55px;
+    border: 1px solid #cecbcf;
     border-radius: 50%;
-    border: 1px solid #e5e5e6;
     background: #f8f7f9;
     overflow: hidden;
 }

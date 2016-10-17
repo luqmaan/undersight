@@ -50,7 +50,7 @@ export default class App extends Component {
                     {hero && <img src={`heros/${hero.icon}`} />}
                   </div>
                   <div className="HeroIconName">
-                    {hero ? name : 'Choose'}
+                    {hero ? hero.name : 'Choose'}
                   </div>
                 </div>
               );
@@ -59,9 +59,14 @@ export default class App extends Component {
         </div>
         <div className="HeroPicker">
           {heros.map((hero) => (
-            <button key={hero.name} className="Hero" onClick={() => this.addPick(hero.name)}>
-              {hero.name}
-            </button>
+            <div key={hero.name}className={classNames("HeroIcon", {'Missing': !hero})} onClick={() => this.addPick(hero.name)}>
+                <div className="HeroIconImage">
+                  {hero && <img src={`heros/${hero.icon}`} />}
+                </div>
+                <div className="HeroIconName">
+                  {hero.name}
+                </div>
+            </div>
           ))}
         </div>
         <div className="TopThree">
