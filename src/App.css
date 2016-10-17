@@ -3,7 +3,11 @@
 
 .EnemyTeamWrapper {
     margin: 10px auto;
-    width: 500px;
+}
+@media (min-width: 600px) {
+    .EnemyTeamWrapper {
+        width: 500px;
+    }
 }
 .EnemyTeam {
     bottom: 0;
@@ -15,7 +19,9 @@
     margin: auto;
     position: relative;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 10px;
 }
 
 .HeroPicker {
@@ -26,14 +32,17 @@
     padding: 10px;
     justify-content: space-around;;
     flex-wrap: wrap;
+    border-radius: 5px;
+    margin: 10px;
 }
 .HeroPicker .HeroIcon {
     margin: 8px auto;
 }
-
-.ResultsContainer {
-    display: flex;
-    justify-content: center;
+@media (min-width: 600px) {
+    .ResultsContainer {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .Results {
