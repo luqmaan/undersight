@@ -15,7 +15,7 @@
     background-color: #fff;
     padding: 5px;
     border-radius: 5px;
-    border: 1px solid #cecbcf;
+    border: 1px solid #fdbdc0;
     display: flex;
     margin: auto;
     position: relative;
@@ -60,7 +60,7 @@
     color: #fff;
     padding: 5px;
     text-transform: uppercase;
-    font-weight: bold;
+    font-size: 0.8em;
 }
 .Counters {
     display: flex;
@@ -90,12 +90,10 @@
     padding: 2px;
     border-radius: 5px;
 }
+
 .HeroIconName {
     margin-top: 1px;
     font-size: 0.6em;
-}
-.Missing .HeroIconImage {
-    border-style: dashed;
 }
 .Missing .HeroIconName {
     color: #b1aeb2;
@@ -107,6 +105,13 @@
     border-radius: 50%;
     background: #f8f7f9;
     overflow: hidden;
+}
+.EnemyTeam .HeroIconImage {
+    border-color: #fca4a9;
+}
+.Missing .HeroIconImage {
+    border-style: dashed;
+    border-color: #cecbcf;
 }
 .HeroIcon img {
     max-height: 100%;
