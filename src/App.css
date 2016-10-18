@@ -1,3 +1,4 @@
+
 .App {
 }
 
@@ -12,7 +13,7 @@
 .EnemyTeam {
     bottom: 0;
     background-color: #fff;
-    padding: 10px;
+    padding: 5px;
     border-radius: 5px;
     border: 1px solid #cecbcf;
     display: flex;
@@ -29,7 +30,7 @@
     flex-direction: row;
     background: #ffffff;
     border: 1px solid #cecbcf;
-    padding: 10px;
+    padding: 5px;
     justify-content: space-around;;
     flex-wrap: wrap;
     border-radius: 5px;
@@ -49,6 +50,8 @@
     background: #fff;
     margin: 10px;
     border: 1px solid #cecbcf;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .Results .Title {
     margin: 0;
@@ -62,11 +65,12 @@
 .Counters {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     padding: 10px;
 }
 .Counter .Score {
-    color: #596781;
-    font-weight: bold;
+    color: #0088ff;
     font-size: 0.9em;
     text-align: center;
 }
@@ -78,10 +82,13 @@
 
 .HeroIcon {
     display: flex;
-    width: 60px;
+    width: 50px;
     flex-direction: column;
     align-items: center;
     text-align: center;
+    cursor: pointer;
+    padding: 2px;
+    border-radius: 5px;
 }
 .HeroIconName {
     margin-top: 1px;
@@ -94,8 +101,8 @@
     color: #b1aeb2;
 }
 .HeroIconImage {
-    width: 55px;
-    height: 55px;
+    width: 40px;
+    height: 40px;
     border: 1px solid #cecbcf;
     border-radius: 50%;
     background: #f8f7f9;
@@ -105,6 +112,13 @@
     max-height: 100%;
     width: auto;
 }
-.UnpickedIcon {
-    height: 55px;
+
+.HeroIcon:hover {
+    background: #f0f0f1;
+}
+.HeroIcon:active, .HeroIcon:focus {
+    background: #cecbcf;
+}
+.HeroIcon:focus .Missing .HeroIconName  {
+    color: #b1aeb2;
 }

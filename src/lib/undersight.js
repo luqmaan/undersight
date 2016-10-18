@@ -21,7 +21,7 @@ export function getTopScores(counters, enemyPicks) {
 
 export function getTopFour(counters, enemyPicks) {
   const scores = getTopScores(counters, enemyPicks);
-  return take(scores, 4);
+  return take(scores, 6);
 }
 
 export function getHeroCounters(counters, enemy) {

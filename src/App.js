@@ -42,10 +42,13 @@ export default class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({enemyPicks: ['Hanzo', 'Soldier: 76', 'Zarya']}, () => this.removePick('Zarya'));
+    // this.setState({enemyPicks: ['Hanzo', 'Soldier: 76', 'Zarya']}, () => this.removePick('Zarya'));
   }
 
   addPick = (pick) => {
+    if (this.state.enemyPicks.length > 5) {
+      return;
+    }
     const enemyPicks = [...this.state.enemyPicks, pick];
     this.setState({enemyPicks}, () => this.recompute(enemyPicks));
   }
@@ -56,6 +59,14 @@ export default class App extends Component {
   }
 
   recompute() {
+    if (this.state.enemyPicks.length === 0) {
+      this.setState({
+        topFourPicks: [],
+        rolePicks: null,
+      });
+      return;
+    }
+
     const topFourPicks = getTopFour(counters, this.state.enemyPicks);
     this.setState({topFourPicks});
 
