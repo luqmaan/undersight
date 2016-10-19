@@ -6,37 +6,27 @@ import Icon from 'react-geomicons';
 import findIndex from 'lodash/findIndex';
 import findLastIndex from 'lodash/findLastIndex';
 import fp from 'lodash/fp';
+import take from 'lodash/take';
+import takeRight from 'lodash/takeRight';
 
 import heros from './data/heros.json';
 import counters from './data/counters.json';
 import {
   getTopScores,
-  getTopFour,
   getAllRolePicks,
   getHero,
 } from './lib/undersight';
 import './App.css';
 
-function HeroIcon({name, onClick}) {
-  const hero = name ? getHero(heros, name) : null;
-  return (
-    <div className={classNames("HeroIcon", {'Missing': !hero})} onClick={onClick}>
-      <div className="HeroIconImage">
-        {hero && <img src={`heros/${hero.icon}`} />}
-      </div>
-      <div className="HeroIconName">
-        {hero ? hero.name : 'Choose'}
-      </div>
-    </div>
-  );
-}
+import HeroIcon from './components/HeroIcon';
+import Results from './components/Results';
 
 export default class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       enemyPicks: [],
-      topFourPicks: [],
+      scores: [],
       rolePicks: null,
     };
   }
@@ -61,14 +51,14 @@ export default class App extends Component {
   recompute() {
     if (this.state.enemyPicks.length === 0) {
       this.setState({
-        topFourPicks: [],
+        scores: [],
         rolePicks: null,
       });
       return;
     }
 
-    const topFourPicks = getTopFour(counters, this.state.enemyPicks);
-    this.setState({topFourPicks});
+    const scores = getTopScores(counters, this.state.enemyPicks);
+    this.setState({scores});
 
     const rolePicks = getAllRolePicks(counters, this.state.enemyPicks, heros);
     this.setState({rolePicks});
@@ -89,43 +79,17 @@ export default class App extends Component {
           {heros.map((hero) => <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />)}
         </div>
         <div className="ResultsContainer">
-          {this.state.topFourPicks.length > 0 && (
-            <div className="Results">
-              <div className="Title">Top Counters</div>
-              <div className="Counters">
-                {this.state.topFourPicks.map((counter) => {
-                  return (
-                    <div key={counter.name} className="Counter">
-                      <HeroIcon name={counter.name} />
-                      <div className="Score">{counter.score}</div>
-                    </div>
-                  )
-                })}
-              </div>
-            </div>
+          {this.state.scores.length > 0 && (
+            <Results title="Top Counters" scores={take(this.state.scores, 6)} />
           )}
           {this.state.rolePicks && (
-            <div className="Results">
-              <div className="Title">By Role</div>
-              <div className="Counters">
-                <div className="Counter">
-                  <HeroIcon name={this.state.rolePicks.Offense.name} />
-                  <div className="Score">{this.state.rolePicks.Offense.score}</div>
-                </div>
-                <div className="Counter">
-                  <HeroIcon name={this.state.rolePicks.Defense.name} />
-                  <div className="Score">{this.state.rolePicks.Defense.score}</div>
-                </div>
-                <div className="Counter">
-                  <HeroIcon name={this.state.rolePicks.Tank.name} />
-                  <div className="Score">{this.state.rolePicks.Tank.score}</div>
-                </div>
-                <div className="Counter">
-                  <HeroIcon name={this.state.rolePicks.Support.name} />
-                  <div className="Score">{this.state.rolePicks.Support.score}</div>
-                </div>
-              </div>
-            </div>
+            <Results title="By Role" scores={[
+                this.state.rolePicks.Offense,
+                this.state.rolePicks.Defense,
+                this.state.rolePicks.Tank,
+                this.state.rolePicks.Support,
+              ]}
+            />
           )}
         </div>
       </div>
