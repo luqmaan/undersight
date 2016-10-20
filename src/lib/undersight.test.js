@@ -2,6 +2,7 @@ import {
   getTopScores,
   getTopFour,
   getAllRolePicks,
+  getRolePicks,
 } from './undersight';
 import allCountersJSON from '../data/counters.json';
 import herosJSON from '../data/heros.json';
@@ -39,6 +40,11 @@ describe('undersight', () => {
     it('should get picks for each category', () => {
       expect(getAllRolePicks(allCountersJSON, ['Pharah', 'Pharah', 'Pharah'], herosJSON)).toMatchSnapshot();
       expect(getAllRolePicks(allCountersJSON, ['Pharah', 'Pharah', 'Pharah', 'Zenyatta', 'Zenyatta', 'Zenyatta'], herosJSON)).toMatchSnapshot();
+    });
+
+    it('should not make Junkrat a defense hero', () => {
+      expect(getRolePicks(allCountersJSON, ['Junkrat'], herosJSON, 'Support').map((score) => score.name))
+        .not.toContain('Junkrat');
     });
   });
 });

@@ -28,8 +28,8 @@ export function getRole(heroName, hero) {
 }
 
 export function getRolePicks(counters, enemyPicks, hero, role) {
-  const countersWithRole = counters.filter((counter) => getRole(counter.you, hero) === role);
-  return getTopScores(countersWithRole, enemyPicks);
+  return getTopScores(counters, enemyPicks)
+    .filter((counter) => getRole(counter.name, hero) === role);
 }
 
 export function getAllRolePicks(counters, enemyPicks, hero) {

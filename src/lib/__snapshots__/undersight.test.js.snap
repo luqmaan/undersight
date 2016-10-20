@@ -10,10 +10,6 @@ Object {
       "score": 3
     },
     Object {
-      "name": "Pharah",
-      "score": 0
-    },
-    Object {
       "name": "Mei",
       "score": -6
     },
@@ -62,10 +58,6 @@ Object {
       "score": 3
     },
     Object {
-      "name": "Pharah",
-      "score": 0
-    },
-    Object {
       "name": "Zenyatta",
       "score": -3
     },
@@ -90,10 +82,6 @@ Object {
     Object {
       "name": "D.Va",
       "score": 3
-    },
-    Object {
-      "name": "Pharah",
-      "score": 0
     },
     Object {
       "name": "Winston",
@@ -124,14 +112,6 @@ Object {
     },
     Object {
       "name": "Torbjörn",
-      "score": 0
-    },
-    Object {
-      "name": "Zenyatta",
-      "score": 0
-    },
-    Object {
-      "name": "Pharah",
       "score": 0
     },
     Object {
@@ -171,20 +151,12 @@ Object {
     Object {
       "name": "Pharah",
       "score": 3
-    },
-    Object {
-      "name": "Zenyatta",
-      "score": 0
     }
   ],
   "Support": Array [
     Object {
       "name": "Ana",
       "score": 9
-    },
-    Object {
-      "name": "Pharah",
-      "score": 0
     },
     Object {
       "name": "Zenyatta",
@@ -214,14 +186,6 @@ Object {
     },
     Object {
       "name": "D.Va",
-      "score": 0
-    },
-    Object {
-      "name": "Zenyatta",
-      "score": 0
-    },
-    Object {
-      "name": "Pharah",
       "score": 0
     },
     Object {
