@@ -1,128 +1,239 @@
 exports[`undersight getAllRolePicks should get picks for each category 1`] = `
 Object {
-  "Defense": Object {
-    "name": "Hanzo",
-    "score": 6
-  },
-  "Offense": Object {
-    "name": "McCree",
-    "score": 6
-  },
-  "Support": Object {
-    "name": "Ana",
-    "score": 3
-  },
-  "Tank": Object {
-    "name": "Roadhog",
-    "score": 3
-  }
+  "Defense": Array [
+    Object {
+      "name": "Hanzo",
+      "score": 6
+    },
+    Object {
+      "name": "Widowmaker",
+      "score": 3
+    },
+    Object {
+      "name": "Pharah",
+      "score": 0
+    },
+    Object {
+      "name": "Mei",
+      "score": -6
+    },
+    Object {
+      "name": "Torbjörn",
+      "score": -6
+    },
+    Object {
+      "name": "Junkrat",
+      "score": -6
+    },
+    Object {
+      "name": "Bastion",
+      "score": -6
+    }
+  ],
+  "Offense": Array [
+    Object {
+      "name": "McCree",
+      "score": 6
+    },
+    Object {
+      "name": "Soldier: 76",
+      "score": 6
+    },
+    Object {
+      "name": "Tracer",
+      "score": 3
+    },
+    Object {
+      "name": "Reaper",
+      "score": 3
+    },
+    Object {
+      "name": "Pharah",
+      "score": 0
+    },
+    Object {
+      "name": "Genji",
+      "score": -3
+    }
+  ],
+  "Support": Array [
+    Object {
+      "name": "Ana",
+      "score": 3
+    },
+    Object {
+      "name": "Pharah",
+      "score": 0
+    },
+    Object {
+      "name": "Zenyatta",
+      "score": -3
+    },
+    Object {
+      "name": "Mercy",
+      "score": -3
+    },
+    Object {
+      "name": "Symmetra",
+      "score": -6
+    },
+    Object {
+      "name": "Lúcio",
+      "score": -6
+    }
+  ],
+  "Tank": Array [
+    Object {
+      "name": "Roadhog",
+      "score": 3
+    },
+    Object {
+      "name": "D.Va",
+      "score": 3
+    },
+    Object {
+      "name": "Pharah",
+      "score": 0
+    },
+    Object {
+      "name": "Winston",
+      "score": -3
+    },
+    Object {
+      "name": "Zarya",
+      "score": -6
+    },
+    Object {
+      "name": "Reinhardt",
+      "score": -6
+    }
+  ]
 }
 `;
 
 exports[`undersight getAllRolePicks should get picks for each category 2`] = `
 Object {
-  "Defense": Object {
-    "name": "Widowmaker",
-    "score": 9
-  },
-  "Offense": Object {
-    "name": "McCree",
-    "score": 12
-  },
-  "Support": Object {
-    "name": "Ana",
-    "score": 9
-  },
-  "Tank": Object {
-    "name": "Roadhog",
-    "score": 6
-  }
+  "Defense": Array [
+    Object {
+      "name": "Widowmaker",
+      "score": 9
+    },
+    Object {
+      "name": "Hanzo",
+      "score": 9
+    },
+    Object {
+      "name": "Torbjörn",
+      "score": 0
+    },
+    Object {
+      "name": "Zenyatta",
+      "score": 0
+    },
+    Object {
+      "name": "Pharah",
+      "score": 0
+    },
+    Object {
+      "name": "Mei",
+      "score": -3
+    },
+    Object {
+      "name": "Junkrat",
+      "score": -3
+    },
+    Object {
+      "name": "Bastion",
+      "score": -3
+    }
+  ],
+  "Offense": Array [
+    Object {
+      "name": "McCree",
+      "score": 12
+    },
+    Object {
+      "name": "Tracer",
+      "score": 9
+    },
+    Object {
+      "name": "Reaper",
+      "score": 9
+    },
+    Object {
+      "name": "Soldier: 76",
+      "score": 9
+    },
+    Object {
+      "name": "Genji",
+      "score": 3
+    },
+    Object {
+      "name": "Pharah",
+      "score": 3
+    },
+    Object {
+      "name": "Zenyatta",
+      "score": 0
+    }
+  ],
+  "Support": Array [
+    Object {
+      "name": "Ana",
+      "score": 9
+    },
+    Object {
+      "name": "Pharah",
+      "score": 0
+    },
+    Object {
+      "name": "Zenyatta",
+      "score": -3
+    },
+    Object {
+      "name": "Symmetra",
+      "score": -6
+    },
+    Object {
+      "name": "Lúcio",
+      "score": -6
+    },
+    Object {
+      "name": "Mercy",
+      "score": -6
+    }
+  ],
+  "Tank": Array [
+    Object {
+      "name": "Roadhog",
+      "score": 6
+    },
+    Object {
+      "name": "Winston",
+      "score": 0
+    },
+    Object {
+      "name": "D.Va",
+      "score": 0
+    },
+    Object {
+      "name": "Zenyatta",
+      "score": 0
+    },
+    Object {
+      "name": "Pharah",
+      "score": 0
+    },
+    Object {
+      "name": "Zarya",
+      "score": -9
+    },
+    Object {
+      "name": "Reinhardt",
+      "score": -9
+    }
+  ]
 }
-`;
-
-exports[`undersight getTopFour should get the top three counters to a team 1`] = `
-Array [
-  Object {
-    "name": "Soldier: 76",
-    "score": 6
-  },
-  Object {
-    "name": "Reaper",
-    "score": 3
-  },
-  Object {
-    "name": "Pharah",
-    "score": 0
-  }
-]
-`;
-
-exports[`undersight getTopFour should get the top three counters to a team 2`] = `
-Array [
-  Object {
-    "name": "Pharah",
-    "score": 3
-  },
-  Object {
-    "name": "Soldier: 76",
-    "score": 0
-  },
-  Object {
-    "name": "Reaper",
-    "score": 0
-  }
-]
-`;
-
-exports[`undersight getTopFour should get the top three counters to a team 3`] = `
-Array [
-  Object {
-    "name": "Reaper",
-    "score": 3
-  },
-  Object {
-    "name": "Soldier: 76",
-    "score": 0
-  },
-  Object {
-    "name": "Pharah",
-    "score": -3
-  }
-]
-`;
-
-exports[`undersight getTopFour should get the top three counters to a team 4`] = `
-Array [
-  Object {
-    "name": "Soldier: 76",
-    "score": 2
-  },
-  Object {
-    "name": "Reaper",
-    "score": 2
-  },
-  Object {
-    "name": "Pharah",
-    "score": 0
-  }
-]
-`;
-
-exports[`undersight getTopFour should get the top three counters to a team 5`] = `
-Array [
-  Object {
-    "name": "Reaper",
-    "score": 2
-  },
-  Object {
-    "name": "Soldier: 76",
-    "score": 2
-  },
-  Object {
-    "name": "Pharah",
-    "score": 0
-  }
-]
 `;
 
 exports[`undersight getTopScores should calculate score for four enemy 1`] = `

@@ -4,7 +4,7 @@ import {
   getAllRolePicks,
 } from './undersight';
 import allCountersJSON from '../data/counters.json';
-import rolesJSON from '../data/roles.json';
+import herosJSON from '../data/heros.json';
 
 const testCounters = allCountersJSON.filter((counter) => (
   counter.you === 'Reaper' ||
@@ -35,20 +35,10 @@ describe('undersight', () => {
     });
   });
 
-  describe('getTopFour', () => {
-    it('should get the top three counters to a team', () => {
-      expect(getTopFour(testCounters, ['Pharah', 'Pharah', 'Pharah'])).toMatchSnapshot();
-      expect(getTopFour(testCounters, ['Reaper', 'Reaper', 'Reaper'])).toMatchSnapshot();
-      expect(getTopFour(testCounters, ['Soldier: 76', 'Soldier: 76', 'Soldier: 76'])).toMatchSnapshot();
-      expect(getTopFour(testCounters, ['Reaper', 'Soldier: 76', 'Pharah'])).toMatchSnapshot();
-      expect(getTopFour(testCounters, ['Soldier: 76', 'Pharah', 'Reaper'])).toMatchSnapshot();
-    });
-  });
-
   describe('getAllRolePicks', () => {
     it('should get picks for each category', () => {
-      expect(getAllRolePicks(allCountersJSON, ['Pharah', 'Pharah', 'Pharah'], rolesJSON)).toMatchSnapshot();
-      expect(getAllRolePicks(allCountersJSON, ['Pharah', 'Pharah', 'Pharah', 'Zenyatta', 'Zenyatta', 'Zenyatta'], rolesJSON)).toMatchSnapshot();
+      expect(getAllRolePicks(allCountersJSON, ['Pharah', 'Pharah', 'Pharah'], herosJSON)).toMatchSnapshot();
+      expect(getAllRolePicks(allCountersJSON, ['Pharah', 'Pharah', 'Pharah', 'Zenyatta', 'Zenyatta', 'Zenyatta'], herosJSON)).toMatchSnapshot();
     });
   });
 });

@@ -1,7 +1,6 @@
 import sum from 'lodash/sum';
 import map from 'lodash/map';
 import sortBy from 'lodash/sortBy';
-import take from 'lodash/take';
 import head from 'lodash/head';
 
 export function getHero(heros, heroName) {
@@ -19,14 +18,8 @@ export function getTopScores(counters, enemyPicks) {
   return sortBy(map(scores, (score, name) => ({score, name})), 'score').reverse();
 }
 
-export function getTopFour(counters, enemyPicks) {
-  const scores = getTopScores(counters, enemyPicks);
-  return take(scores, 6);
-}
-
 export function getHeroCounters(counters, enemy) {
-  const scores = getTopScores(counters, [enemy]);
-  return take(scores, 2);
+  return getTopScores(counters, [enemy]);
 }
 
 export function getRole(heroName, hero) {
@@ -41,10 +34,10 @@ export function getRolePicks(counters, enemyPicks, hero, role) {
 
 export function getAllRolePicks(counters, enemyPicks, hero) {
   return {
-    Offense: head(getRolePicks(counters, enemyPicks, hero, 'Offense')),
-    Defense: head(getRolePicks(counters, enemyPicks, hero, 'Defense')),
-    Tank: head(getRolePicks(counters, enemyPicks, hero, 'Tank')),
-    Support: head(getRolePicks(counters, enemyPicks, hero, 'Support')),
+    Offense: getRolePicks(counters, enemyPicks, hero, 'Offense'),
+    Defense: getRolePicks(counters, enemyPicks, hero, 'Defense'),
+    Tank: getRolePicks(counters, enemyPicks, hero, 'Tank'),
+    Support: getRolePicks(counters, enemyPicks, hero, 'Support'),
   }
 }
 

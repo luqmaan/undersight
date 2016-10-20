@@ -8,6 +8,7 @@ import findLastIndex from 'lodash/findLastIndex';
 import fp from 'lodash/fp';
 import take from 'lodash/take';
 import takeRight from 'lodash/takeRight';
+import head from 'lodash/head';
 
 import heros from './data/heros.json';
 import counters from './data/counters.json';
@@ -91,10 +92,10 @@ export default class App extends Component {
           )}
           {this.state.rolePicks && (
             <Results title="By Role" scores={[
-                this.state.rolePicks.Offense,
-                this.state.rolePicks.Defense,
-                this.state.rolePicks.Tank,
-                this.state.rolePicks.Support,
+                head(this.state.rolePicks.Offense),
+                head(this.state.rolePicks.Defense),
+                head(this.state.rolePicks.Tank),
+                head(this.state.rolePicks.Support),
               ]}
             />
           )}
