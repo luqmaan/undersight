@@ -47,3 +47,7 @@ export function getAllRolePicks(counters, enemyPicks, hero) {
     Support: head(getRolePicks(counters, enemyPicks, hero, 'Support')),
   }
 }
+
+export function isSupport(heros, heroName) {
+  return getHero(heros, heroName).role === 'Support';
+}

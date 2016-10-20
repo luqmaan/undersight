@@ -15,6 +15,7 @@ import {
   getTopScores,
   getAllRolePicks,
   getHero,
+  isSupport,
 } from './lib/undersight';
 import './App.css';
 
@@ -81,6 +82,12 @@ export default class App extends Component {
         <div className="ResultsContainer">
           {this.state.scores.length > 0 && (
             <Results title="Top Counters" scores={take(this.state.scores, 6)} />
+          )}
+          {this.state.scores.length > 0 && (
+            <Results
+              title="Bottom Counters"
+              scores={take(this.state.scores.reverse().filter((score) => !isSupport(heros, score.name)), 6)}
+            />
           )}
           {this.state.rolePicks && (
             <Results title="By Role" scores={[
