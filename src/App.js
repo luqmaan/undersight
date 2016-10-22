@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import {Toolbar, NavItem, Space} from 'rebass';
-import classNames from 'classnames';
 
-import Counters from './Counters';
+import Counters from './components/Counters';
+
 export default class App extends Component {
   render() {
     return (

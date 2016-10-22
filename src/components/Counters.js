@@ -4,16 +4,16 @@ import isNil from 'lodash/isNil';
 import compact from 'lodash/compact';
 import debounce from 'lodash/debounce';
 
-import heros from './data/heros.json';
-import counters from './data/counters.json';
+import heros from '../data/heros.json';
+import counters from '../data/counters.json';
 import {
   getTopScores,
   getAllRolePicks,
-} from './lib/undersight';
+} from '../lib/undersight';
 import './Counters.css';
 
-import HeroIcon from './components/HeroIcon';
-import ResultsContainer from './components/ResultsContainer';
+import HeroIcon from './HeroIcon';
+import ResultsContainer from './ResultsContainer';
 
 export default class Counters extends Component {
   constructor(props) {
