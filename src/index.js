@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import FastClick from 'fastclick';
 
-import App from './App';
+import Counters from './Counters';
 import './index.css';
 
 FastClick.attach(document.body);
 
 ReactDOM.render(
-  <App />,
+  <Counters />,
   document.getElementById('root')
 );

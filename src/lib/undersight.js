@@ -1,7 +1,6 @@
 import sum from 'lodash/sum';
 import map from 'lodash/map';
 import sortBy from 'lodash/sortBy';
-import head from 'lodash/head';
 
 export function getHero(heros, heroName) {
     return heros.find((hero) => hero.name === heroName);

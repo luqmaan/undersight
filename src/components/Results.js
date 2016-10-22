@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import HeroIcon from './HeroIcon';
 
 export default function Results({scores, title}) {

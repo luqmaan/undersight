@@ -12,6 +12,7 @@
     "fastclick": "^1.0.6",
     "fixed-data-table": "^0.6.3",
     "guid": "0.0.12",
+    "history": "^4.3.0",
     "lodash": "^4.16.2",
     "moment": "^2.15.1",
     "normalize.css": "^4.2.0",
@@ -22,6 +23,7 @@
     "react-addons-shallow-compare": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-geomicons": "^2.1.0",
+    "react-router": "^4.0.0-alpha.5",
     "react-select": "^1.0.0-rc.2",
     "rebass": "^0.3.3",
     "reflexbox": "^2.2.2",
@@ -33,5 +35,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
   }
 }

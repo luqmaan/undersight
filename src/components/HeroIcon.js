@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React from 'react';
 import classNames from 'classnames';
 
 import heros from '../data/heros.json';
@@ -9,7 +9,7 @@ export default function HeroIcon({name, onClick}) {
   return (
     <div className={classNames("HeroIcon", {'Missing': !hero})} onClick={onClick}>
       <div className="HeroIconImage">
-        {hero && <img src={`heros/${hero.icon}`} />}
+        {hero && <img src={`heros/${hero.icon}`} alt={hero.name} />}
       </div>
       <div className="HeroIconName">
         {hero ? hero.name : 'Choose'}
