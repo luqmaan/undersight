@@ -21,11 +21,11 @@ export default class ResultsContainer extends Component {
     return (
       <div className="ResultsContainer">
         {scores.length > 0 && (
-          <Results title="Top Counters" scores={take(scores, 6)} />
+          <Results title="Top Calculator" scores={take(scores, 6)} />
         )}
         {scores.length > 0 && (
           <Results
-            title="Bottom Counters"
+            title="Bottom Calculator"
             scores={take(scores.reverse().filter((score) => !isSupport(heros, score.name)), 6)}
           />
         )}

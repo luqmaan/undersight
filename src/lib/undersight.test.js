@@ -3,6 +3,7 @@ import {
   getTopFour,
   getAllRolePicks,
   getRolePicks,
+  getHeroCounters,
 } from './undersight';
 import allCountersJSON from '../data/counters.json';
 import herosJSON from '../data/heros.json';
@@ -47,4 +48,10 @@ describe('undersight', () => {
         .not.toContain('Junkrat');
     });
   });
+
+  describe('getHeroCounters', () => {
+    it('should return counters sorted by score desc', () => {
+      expect(getHeroCounters(allCountersJSON, 'Pharah')).toMatchSnapshot();
+    })
+  })
 });

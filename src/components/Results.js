@@ -5,7 +5,7 @@ export default function Results({scores, title}) {
   return (
     <div className="Results">
       <div className="Title">{title}</div>
-      <div className="Counters">
+      <div className="Calculator">
         {scores.map((score) => {
           return (
             <div key={score.name} className="Counter">

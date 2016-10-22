@@ -1,0 +1,32 @@
+.HeroList {
+    background-color: #fff;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #cecbcf;
+}
+
+.Row {
+    background: #fafafa;
+    padding: 5px 10px 5px 5px;
+    border-bottom: 1px solid #cecbcf;
+    display: flex;
+    align-items: center;
+}
+.Row .Middle {
+    display: flex;
+    flex: 1;
+    padding: 0 15px;
+}
+
+.HeroDetails {
+    background-color: #fff;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #cecbcf;
+}
+.HeroDetails .Instructions {
+    white-space: pre-wrap;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+}

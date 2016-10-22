@@ -17,8 +17,11 @@ export function getTopScores(counters, enemyPicks) {
   return sortBy(map(scores, (score, name) => ({score, name})), 'score').reverse();
 }
 
-export function getHeroCounters(counters, enemy) {
-  return getTopScores(counters, [enemy]);
+export function getHeroCounters(counters, heroName) {
+  return sortBy(
+    counters.filter((counter) => counter.you === heroName),
+    'score'
+  ).reverse();
 }
 
 export function getRole(heroName, hero) {

@@ -200,6 +200,121 @@ Object {
 }
 `;
 
+exports[`undersight getHeroCounters should return counters sorted by score desc 1`] = `
+Array [
+  Object {
+    "enemy": "Zarya",
+    "score": 2,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Torbjörn",
+    "score": 2,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Symmetra",
+    "score": 2,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Reinhardt",
+    "score": 2,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Mei",
+    "score": 2,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Lúcio",
+    "score": 2,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Junkrat",
+    "score": 2,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Bastion",
+    "score": 2,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Zenyatta",
+    "score": 1,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Winston",
+    "score": 1,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Reaper",
+    "score": 1,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Mercy",
+    "score": 1,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Hanzo",
+    "score": 1,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Genji",
+    "score": 1,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "D.Va",
+    "score": 1,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Ana",
+    "score": 1,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Widowmaker",
+    "score": 0,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Pharah",
+    "score": 0,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Tracer",
+    "score": -1,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Soldier: 76",
+    "score": -1,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "Roadhog",
+    "score": -1,
+    "you": "Pharah"
+  },
+  Object {
+    "enemy": "McCree",
+    "score": -2,
+    "you": "Pharah"
+  }
+]
+`;
+
 exports[`undersight getTopScores should calculate score for four enemy 1`] = `
 Array [
   Object {

@@ -10,12 +10,12 @@ import {
   getTopScores,
   getAllRolePicks,
 } from '../lib/undersight';
-import './Counters.css';
+import './Calculator.css';
 
 import HeroIcon from './HeroIcon';
 import ResultsContainer from './ResultsContainer';
 
-export default class Counters extends Component {
+export default class Calculator extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -65,7 +65,7 @@ export default class Counters extends Component {
 
   render() {
     return (
-      <div className="Counters">
+      <div className="Calculator">
         <div className="HeroPicker">
           {heros.map((hero) => <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />)}
         </div>
