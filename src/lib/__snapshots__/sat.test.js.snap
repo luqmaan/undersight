@@ -1,0 +1,92 @@
+exports[`sat should asdf 1`] = `
+Array [
+  Object {
+    "heroName": "Mei",
+    "score": 5
+  },
+  Object {
+    "heroName": "Tracer",
+    "score": 5
+  },
+  Object {
+    "heroName": "Roadhog",
+    "score": 4
+  },
+  Object {
+    "heroName": "McCree",
+    "score": 4
+  },
+  Object {
+    "heroName": "Winston",
+    "score": 3
+  },
+  Object {
+    "heroName": "Junkrat",
+    "score": 3
+  },
+  Object {
+    "heroName": "Reaper",
+    "score": 3
+  },
+  Object {
+    "heroName": "Hanzo",
+    "score": 2
+  },
+  Object {
+    "heroName": "Genji",
+    "score": 2
+  },
+  Object {
+    "heroName": "Soldier: 76",
+    "score": 2
+  },
+  Object {
+    "heroName": "Zenyatta",
+    "score": 1
+  },
+  Object {
+    "heroName": "Symmetra",
+    "score": 1
+  },
+  Object {
+    "heroName": "Ana",
+    "score": 1
+  },
+  Object {
+    "heroName": "Zarya",
+    "score": 1
+  },
+  Object {
+    "heroName": "Widowmaker",
+    "score": 1
+  },
+  Object {
+    "heroName": "Torbjörn",
+    "score": 1
+  },
+  Object {
+    "heroName": "Mercy",
+    "score": 0
+  },
+  Object {
+    "heroName": "Lúcio",
+    "score": 0
+  },
+  Object {
+    "heroName": "Reinhardt",
+    "score": 0
+  },
+  Object {
+    "heroName": "D.Va",
+    "score": 0
+  },
+  Object {
+    "heroName": "Bastion",
+    "score": 0
+  },
+  Object {
+    "heroName": "Pharah",
+    "score": 0
+  }
+]
+`;
