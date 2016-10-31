@@ -1,0 +1,134 @@
+[
+  {
+    "name": "Soldier: 76",
+    "role": "Offense",
+    "icon": "soldier.png",
+    "roleRank": 3
+  },
+  {
+    "name": "Reaper",
+    "role": "Offense",
+    "icon": "reaper.png",
+    "roleRank": 1
+  },
+  {
+    "name": "Pharah",
+    "role": "Offense",
+    "icon": "pharah.png",
+    "roleRank": 6
+  },
+  {
+    "name": "Genji",
+    "role": "Offense",
+    "icon": "genji.png",
+    "roleRank": 2
+  },
+  {
+    "name": "McCree",
+    "role": "Offense",
+    "icon": "mccree.png",
+    "roleRank": 5
+  },
+  {
+    "name": "Tracer",
+    "role": "Offense",
+    "icon": "tracer.png",
+    "roleRank": 4
+  },
+  {
+    "name": "Bastion",
+    "role": "Defense",
+    "icon": "bastion.png",
+    "roleRank": 4
+  },
+  {
+    "name": "Hanzo",
+    "role": "Defense",
+    "icon": "hanzo.png",
+    "roleRank": 3
+  },
+  {
+    "name": "Junkrat",
+    "role": "Defense",
+    "icon": "junkrat.png",
+    "roleRank": 1
+  },
+  {
+    "name": "Mei",
+    "role": "Defense",
+    "icon": "mei.png",
+    "roleRank": 2
+  },
+  {
+    "name": "Torbjörn",
+    "role": "Defense",
+    "icon": "torbjorn.png",
+    "roleRank": 5
+  },
+  {
+    "name": "Widowmaker",
+    "role": "Defense",
+    "icon": "widowmaker.png",
+    "roleRank": 6
+  },
+  {
+    "name": "D.Va",
+    "role": "Tank",
+    "icon": "dva.png",
+    "roleRank": 4
+  },
+  {
+    "name": "Reinhardt",
+    "role": "Tank",
+    "icon": "reinhardt.png",
+    "roleRank": 2
+  },
+  {
+    "name": "Roadhog",
+    "role": "Tank",
+    "icon": "roadhog.png",
+    "roleRank": 3
+  },
+  {
+    "name": "Winston",
+    "role": "Tank",
+    "icon": "winston.png",
+    "roleRank": 5
+  },
+  {
+    "name": "Zarya",
+    "role": "Tank",
+    "icon": "zarya.png",
+    "roleRank": 1
+  },
+  {
+    "name": "Ana",
+    "role": "Support",
+    "icon": "ana.png",
+    "roleRank": 4
+  },
+  {
+    "name": "Lúcio",
+    "role": "Support",
+    "icon": "lucio.png",
+    "roleRank": 1
+  },
+  {
+    "name": "Mercy",
+    "role": "Support",
+    "icon": "mercy.png",
+    "roleRank": 3
+  },
+  {
+    "name": "Symmetra",
+    "role": "Support",
+    "icon": "symmetra.png",
+    "roleRank": 5
+  },
+  {
+    "name": "Zenyatta",
+    "role": "Support",
+    "icon": "zenyatta.png",
+    "roleRank": 2
+  }
+]
