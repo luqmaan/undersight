@@ -24,22 +24,22 @@ export function getHeroCounters(counters, heroName) {
   ).reverse();
 }
 
-export function getRole(heroName, hero) {
-  const matchingRole = hero.find((role) => role.name === heroName);
+export function getRole(heros, heroName) {
+  const matchingRole = heros.find((role) => role.name === heroName);
   return matchingRole.role;
 }
 
-export function getRolePicks(counters, enemyPicks, hero, role) {
+export function getRolePicks(counters, enemyPicks, heros, role) {
   return getTopScores(counters, enemyPicks)
-    .filter((counter) => getRole(counter.name, hero) === role);
+    .filter((counter) => getRole(heros, counter.name) === role);
 }
 
-export function getAllRolePicks(counters, enemyPicks, hero) {
+export function getAllRolePicks(counters, enemyPicks, heros) {
   return {
-    Offense: getRolePicks(counters, enemyPicks, hero, 'Offense'),
-    Defense: getRolePicks(counters, enemyPicks, hero, 'Defense'),
-    Tank: getRolePicks(counters, enemyPicks, hero, 'Tank'),
-    Support: getRolePicks(counters, enemyPicks, hero, 'Support'),
+    Offense: getRolePicks(counters, enemyPicks, heros, 'Offense'),
+    Defense: getRolePicks(counters, enemyPicks, heros, 'Defense'),
+    Tank: getRolePicks(counters, enemyPicks, heros, 'Tank'),
+    Support: getRolePicks(counters, enemyPicks, heros, 'Support'),
   }
 }
 
