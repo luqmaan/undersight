@@ -5,11 +5,13 @@ import isNil from 'lodash/isNil';
 import compact from 'lodash/compact';
 import debounce from 'lodash/debounce';
 
-import heros from '../data/heros.json';
 import counters from '../data/counters.json';
+import heros from '../data/heros.json';
+import herosRanks from '../data/heros_ranks.json';
 import {
   getTopScores,
-  getAllRolePicks,
+  getTeamPicksByHardCounter,
+  getTeamPicksByHardCounterPrime,
 } from '../lib/undersight';
 import './Calculator.css';
 
@@ -57,9 +59,27 @@ export default class Calculator extends Component {
     const algorithms = [
       {
         title: 'Sum of all scores',
-        description: 'Sum of counters....',
+        description: (
+          <div className="Description">
+            <div className="Overview">Input: Enemy Team, Output: Your Team</div>
+            <div className="Details">
+              <p>Takes the enemy team and returns who to pick based on who counters the most number of enemies. It loops through every hero in the game and determines how well they do against each character on the enemy team. This is assigned to a score.</p>
+              <p>A higher score is better. A negative score means you should avoid this hero, as the enemy team counters the very well.</p>
+            </div>
+          </div>
+        ),
         scores: getTopScores(counters, nonEmptyPicks),
-      }
+      },
+      {
+        title: 'Your team hard counters',
+        description: <div></div>,
+        scores: getTeamPicksByHardCounter(counters, heros, nonEmptyPicks),
+      },
+      {
+        title: 'Your team hard counters prime',
+        description: <div></div>,
+        scores: getTeamPicksByHardCounterPrime(counters, heros, herosRanks, nonEmptyPicks),
+      },
     ];
 
     this.setState({algorithms, isLoading: false});
@@ -80,9 +100,9 @@ export default class Calculator extends Component {
           </div>
         </div>
         {this.state.algorithms.map((algorithm) => (
-          <div key={algorithm.title}>
-            <h1>{algorithm.title}</h1>
-            <div>{algorithm.description}</div>
+          <div key={algorithm.title} className="Algorithm">
+            <div classname="Title">{algorithm.title}</div>
+            {algorithm.description}
             <ResultsContainer title={algorithm.title} scores={algorithm.scores} />
           </div>
         ))}

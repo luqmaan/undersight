@@ -1,205 +1,3 @@
-exports[`undersight getAllRolePicks should get picks for each category 1`] = `
-Object {
-  "Defense": Array [
-    Object {
-      "name": "Hanzo",
-      "score": 6
-    },
-    Object {
-      "name": "Widowmaker",
-      "score": 3
-    },
-    Object {
-      "name": "Mei",
-      "score": -6
-    },
-    Object {
-      "name": "Torbjörn",
-      "score": -6
-    },
-    Object {
-      "name": "Junkrat",
-      "score": -6
-    },
-    Object {
-      "name": "Bastion",
-      "score": -6
-    }
-  ],
-  "Offense": Array [
-    Object {
-      "name": "McCree",
-      "score": 6
-    },
-    Object {
-      "name": "Soldier: 76",
-      "score": 6
-    },
-    Object {
-      "name": "Tracer",
-      "score": 3
-    },
-    Object {
-      "name": "Reaper",
-      "score": 3
-    },
-    Object {
-      "name": "Pharah",
-      "score": 0
-    },
-    Object {
-      "name": "Genji",
-      "score": -3
-    }
-  ],
-  "Support": Array [
-    Object {
-      "name": "Ana",
-      "score": 3
-    },
-    Object {
-      "name": "Zenyatta",
-      "score": -3
-    },
-    Object {
-      "name": "Mercy",
-      "score": -3
-    },
-    Object {
-      "name": "Symmetra",
-      "score": -6
-    },
-    Object {
-      "name": "Lúcio",
-      "score": -6
-    }
-  ],
-  "Tank": Array [
-    Object {
-      "name": "Roadhog",
-      "score": 3
-    },
-    Object {
-      "name": "D.Va",
-      "score": 3
-    },
-    Object {
-      "name": "Winston",
-      "score": -3
-    },
-    Object {
-      "name": "Zarya",
-      "score": -6
-    },
-    Object {
-      "name": "Reinhardt",
-      "score": -6
-    }
-  ]
-}
-`;
-
-exports[`undersight getAllRolePicks should get picks for each category 2`] = `
-Object {
-  "Defense": Array [
-    Object {
-      "name": "Widowmaker",
-      "score": 9
-    },
-    Object {
-      "name": "Hanzo",
-      "score": 9
-    },
-    Object {
-      "name": "Torbjörn",
-      "score": 0
-    },
-    Object {
-      "name": "Mei",
-      "score": -3
-    },
-    Object {
-      "name": "Junkrat",
-      "score": -3
-    },
-    Object {
-      "name": "Bastion",
-      "score": -3
-    }
-  ],
-  "Offense": Array [
-    Object {
-      "name": "McCree",
-      "score": 12
-    },
-    Object {
-      "name": "Tracer",
-      "score": 9
-    },
-    Object {
-      "name": "Reaper",
-      "score": 9
-    },
-    Object {
-      "name": "Soldier: 76",
-      "score": 9
-    },
-    Object {
-      "name": "Genji",
-      "score": 3
-    },
-    Object {
-      "name": "Pharah",
-      "score": 3
-    }
-  ],
-  "Support": Array [
-    Object {
-      "name": "Ana",
-      "score": 9
-    },
-    Object {
-      "name": "Zenyatta",
-      "score": -3
-    },
-    Object {
-      "name": "Symmetra",
-      "score": -6
-    },
-    Object {
-      "name": "Lúcio",
-      "score": -6
-    },
-    Object {
-      "name": "Mercy",
-      "score": -6
-    }
-  ],
-  "Tank": Array [
-    Object {
-      "name": "Roadhog",
-      "score": 6
-    },
-    Object {
-      "name": "Winston",
-      "score": 0
-    },
-    Object {
-      "name": "D.Va",
-      "score": 0
-    },
-    Object {
-      "name": "Zarya",
-      "score": -9
-    },
-    Object {
-      "name": "Reinhardt",
-      "score": -9
-    }
-  ]
-}
-`;
-
 exports[`undersight getHeroCounters should return counters sorted by score desc 1`] = `
 Array [
   Object {
@@ -311,6 +109,168 @@ Array [
     "enemy": "McCree",
     "score": -2,
     "you": "Pharah"
+  }
+]
+`;
+
+exports[`undersight getTeamPicksByHardCounter should return team picks 1`] = `
+Array [
+  Object {
+    "name": "Winston",
+    "score": 2
+  },
+  Object {
+    "name": "Symmetra",
+    "score": 1
+  },
+  Object {
+    "name": "Tracer",
+    "score": 1
+  },
+  Object {
+    "name": "Mercy",
+    "score": 0
+  },
+  Object {
+    "name": "Lúcio",
+    "score": 0
+  },
+  Object {
+    "name": "Ana",
+    "score": 0
+  },
+  Object {
+    "name": "Zarya",
+    "score": 0
+  },
+  Object {
+    "name": "Reinhardt",
+    "score": 0
+  },
+  Object {
+    "name": "D.Va",
+    "score": 0
+  },
+  Object {
+    "name": "Widowmaker",
+    "score": 0
+  },
+  Object {
+    "name": "Torbjörn",
+    "score": 0
+  },
+  Object {
+    "name": "Mei",
+    "score": 0
+  },
+  Object {
+    "name": "Bastion",
+    "score": 0
+  },
+  Object {
+    "name": "McCree",
+    "score": 0
+  },
+  Object {
+    "name": "Pharah",
+    "score": 0
+  },
+  Object {
+    "name": "Soldier: 76",
+    "score": 0
+  }
+]
+`;
+
+exports[`undersight getTeamPicksByHardCounterPrime should return team picks 1`] = `
+Array [
+  Object {
+    "name": "Lúcio",
+    "score": 9
+  },
+  Object {
+    "name": "Zarya",
+    "score": 9
+  },
+  Object {
+    "name": "Junkrat",
+    "score": 9
+  },
+  Object {
+    "name": "Reaper",
+    "score": 9
+  },
+  Object {
+    "name": "Zenyatta",
+    "score": 8
+  },
+  Object {
+    "name": "Reinhardt",
+    "score": 8
+  },
+  Object {
+    "name": "Mei",
+    "score": 8
+  },
+  Object {
+    "name": "Genji",
+    "score": 8
+  },
+  Object {
+    "name": "Mercy",
+    "score": 7
+  },
+  Object {
+    "name": "Winston",
+    "score": 7
+  },
+  Object {
+    "name": "Roadhog",
+    "score": 7
+  },
+  Object {
+    "name": "Hanzo",
+    "score": 7
+  },
+  Object {
+    "name": "Tracer",
+    "score": 7
+  },
+  Object {
+    "name": "Soldier: 76",
+    "score": 7
+  },
+  Object {
+    "name": "Symmetra",
+    "score": 6
+  },
+  Object {
+    "name": "Ana",
+    "score": 6
+  },
+  Object {
+    "name": "D.Va",
+    "score": 6
+  },
+  Object {
+    "name": "Bastion",
+    "score": 6
+  },
+  Object {
+    "name": "Torbjörn",
+    "score": 5
+  },
+  Object {
+    "name": "McCree",
+    "score": 5
+  },
+  Object {
+    "name": "Widowmaker",
+    "score": 4
+  },
+  Object {
+    "name": "Pharah",
+    "score": 4
   }
 ]
 `;
