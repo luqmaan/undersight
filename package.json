@@ -4,21 +4,16 @@
   "private": true,
   "homepage": "http://luqmaan.github.io/undersight",
   "devDependencies": {
-    "react-scripts": "0.6.1"
+    "react-scripts": "^0.7.0"
   },
   "dependencies": {
-    "axios": "^0.14.0",
     "classnames": "^2.2.5",
     "fastclick": "^1.0.6",
-    "fixed-data-table": "^0.6.3",
     "guid": "0.0.12",
     "history": "^4.3.0",
     "lodash": "^4.16.2",
     "moment": "^2.15.1",
-    "normalize.css": "^4.2.0",
-    "overwatch-heroes-icon-font": "^1.0.0",
     "querystring": "^0.2.0",
-    "radium": "^0.18.1",
     "react": "^15.3.2",
     "react-addons-shallow-compare": "^15.3.2",
     "react-dom": "^15.3.2",
@@ -26,9 +21,7 @@
     "react-router": "^4.0.0-alpha.5",
     "react-select": "^1.0.0-rc.2",
     "rebass": "^0.3.3",
-    "reflexbox": "^2.2.2",
-    "scroll-to": "0.0.2",
-    "whatwg-fetch": "^1.0.0"
+    "scroll-to": "0.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
