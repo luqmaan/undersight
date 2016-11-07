@@ -17,7 +17,7 @@ export default class App extends Component {
           </Toolbar>
           <Match pattern="/reference/:heroName" component={Reference} />
           <Match pattern="/calculator" component={Calculator} />
-          <Miss component={Reference} />
+          <Miss component={Calculator} />
         </div>
       </HashRouter>
     );

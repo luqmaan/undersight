@@ -1,14 +1,18 @@
 import React, {Component} from 'react';
 import findIndex from 'lodash/findIndex';
+import range from 'lodash/range';
 import isNil from 'lodash/isNil';
 import compact from 'lodash/compact';
 import debounce from 'lodash/debounce';
 
-import heros from '../data/heros.json';
 import counters from '../data/counters.json';
+import heros from '../data/heros.json';
+import herosRanks from '../data/heros_ranks.json';
 import {
   getTopScores,
-  getAllRolePicks,
+  getTeamPicksByHardCounter,
+  getTeamPicksByHardCounterPrime,
+  getTeamPicksByHardCounterFlexRoles,
 } from '../lib/undersight';
 import './Calculator.css';
 
@@ -20,8 +24,7 @@ export default class Calculator extends Component {
     super(props);
     this.state = {
       enemyPicks: new Array(6),
-      scores: [],
-      rolePicks: null,
+      algorithms: [],
       isLoading: true,
     };
   }
@@ -50,17 +53,79 @@ export default class Calculator extends Component {
     const nonEmptyPicks = compact(this.state.enemyPicks);
 
     if (nonEmptyPicks.length === 0) {
-      this.setState({
-        scores: [],
-        rolePicks: null,
-        isLoading: false,
-      });
+      this.setState({algorithms: [], isLoading: false});
       return;
     }
 
-    const scores = getTopScores(counters, nonEmptyPicks);
-    const rolePicks = getAllRolePicks(counters, nonEmptyPicks, heros);
-    this.setState({scores, rolePicks, isLoading: false});
+    const algorithms = [
+      {
+        title: 'Counters based on enemy team',
+        description: (
+          <div className="Description">
+            <div className="Overview">Input: Enemy Team, Output: Your Team</div>
+            <div className="Details">
+              <p>This recommends heros that counter the most number of enemies. Use this when you know what the enemy team looks like.</p>
+              <p>A higher score is better. A negative score means you should avoid this hero, as the enemy team counters them very well.</p>
+            </div>
+          </div>
+        ),
+        scores: getTopScores(counters, nonEmptyPicks),
+      },
+      {
+        title: 'Counters based on your team',
+        description: (
+          <div className="Description">
+            <div className="Overview">Input: Your Team, Output: Your Team</div>
+            <div className="Details">
+              <p>This recommends heros that counter the widest variety of enemies. Use this before a match starts.</p>
+              <p>A higher score is better.</p>
+            </div>
+          </div>
+        ),
+        scores: getTeamPicksByHardCounter(counters, heros, nonEmptyPicks),
+      },
+      {
+        title: 'Counters based on your team + Missing Roles + Master Overwatch Stats',
+        description: (
+          <div className="Description">
+            <div className="Overview">Input: Your Team, Output: Your Team</div>
+            <div className="Details">
+              <p>This recommends heros that counter widest variety of enemies. It also considers stats (popularity, KD ratio) from <a href="http://masteroverwatch.com/heroes/pc/global/mode/ranked" target="_blank">Master Overwatch</a> and the missing roles on your team. Use this before a match starts.</p>
+              <p>A higher score is better.</p>
+            </div>
+          </div>
+        ),
+        scores: getTeamPicksByHardCounterPrime(counters, heros, herosRanks, nonEmptyPicks),
+      },
+      {
+        title: 'Counters based on your team + Flexible Missing Roles (3 Tank, 3 DPS) + Master Overwatch Stats',
+        description: (
+          <div className="Description">
+            <div className="Overview">Input: Your Team, Output: Your Team</div>
+            <div className="Details">
+              <p>This recommends heros that counter widest variety of enemies. It also considers stats (popularity, KD ratio) from <a href="http://masteroverwatch.com/heroes/pc/global/mode/ranked" target="_blank">Master Overwatch</a> and the missing roles on your team. Assumes you want 3 tanks and 3 DPS heroes. Use this before a match starts.</p>
+              <p>A higher score is better.</p>
+            </div>
+          </div>
+        ),
+        scores: getTeamPicksByHardCounterFlexRoles(counters, heros, herosRanks, nonEmptyPicks, {tank: 3, dps: 3, support: 0}),
+      },
+      {
+        title: 'Counters based on your team + Flexible Missing Roles (2 Tank, 2 DPS, 2 Support) + Master Overwatch Stats',
+        description: (
+          <div className="Description">
+            <div className="Overview">Input: Your Team, Output: Your Team</div>
+            <div className="Details">
+              <p>This recommends heros that counter widest variety of enemies. It also considers stats (popularity, KD ratio) from <a href="http://masteroverwatch.com/heroes/pc/global/mode/ranked" target="_blank">Master Overwatch</a> and the missing roles on your team. Assumes you want 2 tanks, 2 supports, and 3 DPS heroes. Use this before a match starts.</p>
+              <p>A higher score is better.</p>
+            </div>
+          </div>
+        ),
+        scores: getTeamPicksByHardCounterFlexRoles(counters, heros, herosRanks, nonEmptyPicks, {tank: 2, dps: 2, support: 2}),
+      },
+    ];
+
+    this.setState({algorithms, isLoading: false});
   }, 500);
 
   render() {
@@ -71,13 +136,19 @@ export default class Calculator extends Component {
         </div>
         <div className="EnemyTeamWrapper">
           <div className="EnemyTeam">
-            {[0, 1, 2, 3, 4, 5].map((i) => {
+            {range(6).map((i) => {
               const name = this.state.enemyPicks[i];
               return <HeroIcon name={name} key={i} onClick={() => this.removePickAtIndex(i)} />;
             })}
           </div>
         </div>
-        <ResultsContainer scores={this.state.scores} rolePicks={this.state.rolePicks} />
+        {this.state.algorithms.map((algorithm) => (
+          <div key={algorithm.title} className="Algorithm">
+            <div classname="Title">{algorithm.title}</div>
+            {algorithm.description}
+            <ResultsContainer title={algorithm.title} scores={algorithm.scores} />
+          </div>
+        ))}
       </div>
     );
   }

@@ -5,9 +5,10 @@ import Results from './Results';
 
 import take from 'lodash/take';
 import head from 'lodash/head';
+import groupBy from 'lodash/groupBy';
 
 import heros from '../data/heros.json';
-import {isSupport} from '../lib/undersight';
+import {isSupport, getRole} from '../lib/undersight';
 
 export default class ResultsContainer extends Component {
   shouldComponentUpdate(nextProps, nextState) {
@@ -16,16 +17,21 @@ export default class ResultsContainer extends Component {
   }
 
   render() {
-    const {scores, rolePicks} = this.props;
+    const {scores} = this.props;
+
+    const rolePicks = groupBy(
+      scores.map((score) => ({...score, role: getRole(heros, score.name)})),
+      'role'
+    );
 
     return (
       <div className="ResultsContainer">
         {scores.length > 0 && (
-          <Results title="Top Calculator" scores={take(scores, 6)} />
+          <Results title="Good" scores={take(scores, 6)} />
         )}
         {scores.length > 0 && (
           <Results
-            title="Bottom Calculator"
+            title="Bad"
             scores={take(scores.reverse().filter((score) => !isSupport(heros, score.name)), 6)}
           />
         )}

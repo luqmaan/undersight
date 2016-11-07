@@ -129,3 +129,25 @@
 .HeroIcon:focus .Missing .HeroIconName  {
     color: #b1aeb2;
 }
+
+.Algorithm {
+  border-bottom: 1px solid #888aab;
+  padding-bottom: 15px;
+  margin-top: 15px;
+}
+.Algorithm:last-child {
+  border: none;
+}
+.Algorithm .Title {
+  font-size: 1em;
+  font-weight: bold;
+  margin-bottom: 1.3em;
+}
+.Algorithm .Overview {
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.Algorithm .Description {
+  font-size: 0.8em;
+}
