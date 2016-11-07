@@ -5,6 +5,7 @@ import {
   getHeroCounters,
   getTeamPicksByHardCounter,
   getTeamPicksByHardCounterPrime,
+  getTeamPicksByHardCounterFlexRoles,
 } from './undersight';
 import allCountersJSON from '../data/counters.json';
 import herosJSON from '../data/heros.json';
@@ -54,6 +55,15 @@ describe('undersight', () => {
   describe('getTeamPicksByHardCounterPrime', () => {
     it('should return team picks', () => {
       expect(getTeamPicksByHardCounterPrime(allCountersJSON, herosJSON, herosRanksJSON, ['Genji', 'Junkrat', 'Roadhog', 'Zenyatta', 'Hanzo', 'Reaper'], false)).toMatchSnapshot();
+    });
+  });
+  
+  describe('getTeamPicksByHardCounterFlexRoles', () => {
+    fit('should return team picks', () => {
+      const teamPicks = ['Tracer', 'Junkrat', 'Zarya', 'Reinhardt'];
+      const roleCountGoal = {tank: 3, dps: 3, support: 0};
+      const newPicks = getTeamPicksByHardCounterFlexRoles(allCountersJSON, herosJSON, herosRanksJSON, teamPicks, roleCountGoal);
+      console.log(newPicks);
     });
   });
 });
