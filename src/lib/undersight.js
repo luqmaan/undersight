@@ -89,7 +89,7 @@ export function getTeamPicksByHardCounterPrime(counters, heros, herosRanks, team
       .map((counter) => counter.enemy);
   })));
 
-  const teamRoles = uniq(teamPicks.map((heroName) => heros.filter((hero) => hero.name == heroName)[0].role));
+  const teamRoles = uniq(teamPicks.map((heroName) => heros.filter((hero) => hero.name === heroName)[0].role));
 
   const uncounteredHeros = difference(allHeros, teamHardCounters);
 
@@ -108,6 +108,49 @@ export function getTeamPicksByHardCounterPrime(counters, heros, herosRanks, team
     return {
       score: numHardCounters + roleRank + missingRoleBonus,
       name: hero.name,
+    };
+  }), 'score').reverse();
+
+  return scores;
+}
+
+export function getTeamPicksByHardCounterFlexRoles(counters, heros, herosRanks, teamPicks, roleCountGoal) {
+  const allHeros = heros.map((hero) => hero.name);
+
+  const teamHardCounters = uniq(flatten(teamPicks.map((heroName) => {
+    return counters
+      .filter((counter) => counter.you === heroName && counter.score === 2)
+      .map((counter) => counter.enemy);
+  })));
+  
+  const roleCounts = teamPicks
+    .map((heroName) => {
+      return herosRanks.filter((hero) => hero.name === heroName)[0].teamRole;
+    })
+    .reduce((prev, cur) => {
+      prev[cur]--;
+      return prev;
+    }, roleCountGoal);
+    
+  const uncounteredHeros = difference(allHeros, teamHardCounters);
+
+  const scores = sortBy(herosRanks.map((hero) => {
+    const numHardCounters = counters.reduce((prev, counter) => {
+      if (counter.you === hero.name && counter.score === 2 && uncounteredHeros.indexOf(counter.enemy) !== -1) {
+        return prev + 1;
+      }
+      return prev;
+    }, 0);
+
+    const roleRank = 10 - hero.roleRank;
+    
+    const roleCount = roleCounts[hero.teamRole];
+    const adjRoleCount = roleCount > 0 ? roleCount : roleCount - 3;
+    const roleBonus = adjRoleCount * 2;
+
+    return {
+      name: hero.name,
+      score: numHardCounters + roleRank + roleBonus,
     };
   }), 'score').reverse();
 

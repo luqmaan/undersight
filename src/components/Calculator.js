@@ -12,6 +12,7 @@ import {
   getTopScores,
   getTeamPicksByHardCounter,
   getTeamPicksByHardCounterPrime,
+  getTeamPicksByHardCounterFlexRoles,
 } from '../lib/undersight';
 import './Calculator.css';
 
@@ -87,7 +88,7 @@ export default class Calculator extends Component {
         title: 'Counters based on your team + Missing Roles + Master Overwatch Stats',
         description: (
           <div className="Description">
-            <div className="Overview">Input: Enemy Team, Output: Your Team</div>
+            <div className="Overview">Input: Your Team, Output: Your Team</div>
             <div className="Details">
               <p>This recommends heros that counter widest variety of enemies. It also considers stats (popularity, KD ratio) from <a href="http://masteroverwatch.com/heroes/pc/global/mode/ranked" target="_blank">Master Overwatch</a> and the missing roles on your team. Use this before a match starts.</p>
               <p>A higher score is better.</p>
@@ -95,6 +96,32 @@ export default class Calculator extends Component {
           </div>
         ),
         scores: getTeamPicksByHardCounterPrime(counters, heros, herosRanks, nonEmptyPicks),
+      },
+      {
+        title: 'Counters based on your team + Flexible Missing Roles (3 Tank, 3 DPS) + Master Overwatch Stats',
+        description: (
+          <div className="Description">
+            <div className="Overview">Input: Your Team, Output: Your Team</div>
+            <div className="Details">
+              <p>This recommends heros that counter widest variety of enemies. It also considers stats (popularity, KD ratio) from <a href="http://masteroverwatch.com/heroes/pc/global/mode/ranked" target="_blank">Master Overwatch</a> and the missing roles on your team. Assumes you want 3 tanks and 3 DPS heroes. Use this before a match starts.</p>
+              <p>A higher score is better.</p>
+            </div>
+          </div>
+        ),
+        scores: getTeamPicksByHardCounterFlexRoles(counters, heros, herosRanks, nonEmptyPicks, {tank: 3, dps: 3, support: 0}),
+      },
+      {
+        title: 'Counters based on your team + Flexible Missing Roles (2 Tank, 2 DPS, 2 Support) + Master Overwatch Stats',
+        description: (
+          <div className="Description">
+            <div className="Overview">Input: Your Team, Output: Your Team</div>
+            <div className="Details">
+              <p>This recommends heros that counter widest variety of enemies. It also considers stats (popularity, KD ratio) from <a href="http://masteroverwatch.com/heroes/pc/global/mode/ranked" target="_blank">Master Overwatch</a> and the missing roles on your team. Assumes you want 2 tanks, 2 supports, and 3 DPS heroes. Use this before a match starts.</p>
+              <p>A higher score is better.</p>
+            </div>
+          </div>
+        ),
+        scores: getTeamPicksByHardCounterFlexRoles(counters, heros, herosRanks, nonEmptyPicks, {tank: 2, dps: 2, support: 2}),
       },
     ];
 
