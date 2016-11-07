@@ -3,113 +3,113 @@ Array [
   Object {
     "enemy": "Zarya",
     "score": 2,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Torbjörn",
     "score": 2,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Symmetra",
     "score": 2,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Reinhardt",
     "score": 2,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Mei",
     "score": 2,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Lúcio",
     "score": 2,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Junkrat",
     "score": 2,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Bastion",
     "score": 2,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Zenyatta",
     "score": 1,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Winston",
     "score": 1,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Reaper",
     "score": 1,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Mercy",
     "score": 1,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Hanzo",
     "score": 1,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Genji",
     "score": 1,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "D.Va",
     "score": 1,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Ana",
     "score": 1,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Widowmaker",
     "score": 0,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Pharah",
     "score": 0,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Tracer",
     "score": -1,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Soldier: 76",
     "score": -1,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "Roadhog",
     "score": -1,
-    "you": "Pharah"
+    "you": "Pharah",
   },
   Object {
     "enemy": "McCree",
     "score": -2,
-    "you": "Pharah"
-  }
+    "you": "Pharah",
+  },
 ]
 `;
 
@@ -117,68 +117,161 @@ exports[`undersight getTeamPicksByHardCounter should return team picks 1`] = `
 Array [
   Object {
     "name": "Winston",
-    "score": 2
+    "score": 2,
   },
   Object {
     "name": "Symmetra",
-    "score": 1
+    "score": 1,
   },
   Object {
     "name": "Tracer",
-    "score": 1
+    "score": 1,
   },
   Object {
     "name": "Mercy",
-    "score": 0
+    "score": 0,
   },
   Object {
     "name": "Lúcio",
-    "score": 0
+    "score": 0,
   },
   Object {
     "name": "Ana",
-    "score": 0
+    "score": 0,
   },
   Object {
     "name": "Zarya",
-    "score": 0
+    "score": 0,
   },
   Object {
     "name": "Reinhardt",
-    "score": 0
+    "score": 0,
   },
   Object {
     "name": "D.Va",
-    "score": 0
+    "score": 0,
   },
   Object {
     "name": "Widowmaker",
-    "score": 0
+    "score": 0,
   },
   Object {
     "name": "Torbjörn",
-    "score": 0
+    "score": 0,
   },
   Object {
     "name": "Mei",
-    "score": 0
+    "score": 0,
   },
   Object {
     "name": "Bastion",
-    "score": 0
+    "score": 0,
   },
   Object {
     "name": "McCree",
-    "score": 0
+    "score": 0,
   },
   Object {
     "name": "Pharah",
-    "score": 0
+    "score": 0,
   },
   Object {
     "name": "Soldier: 76",
-    "score": 0
-  }
+    "score": 0,
+  },
+]
+`;
+
+exports[`undersight getTeamPicksByHardCounterFlexRoles should return team picks 1`] = `
+Array [
+  Object {
+    "name": "Hanzo",
+    "score": 12,
+  },
+  Object {
+    "name": "Zarya",
+    "score": 11,
+  },
+  Object {
+    "name": "Junkrat",
+    "score": 11,
+  },
+  Object {
+    "name": "Reaper",
+    "score": 11,
+  },
+  Object {
+    "name": "Roadhog",
+    "score": 10,
+  },
+  Object {
+    "name": "Reinhardt",
+    "score": 10,
+  },
+  Object {
+    "name": "Genji",
+    "score": 10,
+  },
+  Object {
+    "name": "Soldier: 76",
+    "score": 10,
+  },
+  Object {
+    "name": "D.Va",
+    "score": 9,
+  },
+  Object {
+    "name": "McCree",
+    "score": 9,
+  },
+  Object {
+    "name": "Winston",
+    "score": 8,
+  },
+  Object {
+    "name": "Widowmaker",
+    "score": 8,
+  },
+  Object {
+    "name": "Bastion",
+    "score": 8,
+  },
+  Object {
+    "name": "Tracer",
+    "score": 8,
+  },
+  Object {
+    "name": "Torbjörn",
+    "score": 7,
+  },
+  Object {
+    "name": "Pharah",
+    "score": 7,
+  },
+  Object {
+    "name": "Lúcio",
+    "score": 3,
+  },
+  Object {
+    "name": "Mei",
+    "score": 3,
+  },
+  Object {
+    "name": "Zenyatta",
+    "score": 2,
+  },
+  Object {
+    "name": "Mercy",
+    "score": 1,
+  },
+  Object {
+    "name": "Symmetra",
+    "score": 0,
+  },
+  Object {
+    "name": "Ana",
+    "score": 0,
+  },
 ]
 `;
 
@@ -186,92 +279,92 @@ exports[`undersight getTeamPicksByHardCounterPrime should return team picks 1`] 
 Array [
   Object {
     "name": "Lúcio",
-    "score": 9
+    "score": 9,
   },
   Object {
     "name": "Zarya",
-    "score": 9
+    "score": 9,
   },
   Object {
     "name": "Junkrat",
-    "score": 9
+    "score": 9,
   },
   Object {
     "name": "Reaper",
-    "score": 9
+    "score": 9,
   },
   Object {
     "name": "Zenyatta",
-    "score": 8
+    "score": 8,
   },
   Object {
     "name": "Reinhardt",
-    "score": 8
+    "score": 8,
   },
   Object {
     "name": "Mei",
-    "score": 8
+    "score": 8,
   },
   Object {
     "name": "Genji",
-    "score": 8
+    "score": 8,
   },
   Object {
     "name": "Mercy",
-    "score": 7
+    "score": 7,
   },
   Object {
     "name": "Winston",
-    "score": 7
+    "score": 7,
   },
   Object {
     "name": "Roadhog",
-    "score": 7
+    "score": 7,
   },
   Object {
     "name": "Hanzo",
-    "score": 7
+    "score": 7,
   },
   Object {
     "name": "Tracer",
-    "score": 7
+    "score": 7,
   },
   Object {
     "name": "Soldier: 76",
-    "score": 7
+    "score": 7,
   },
   Object {
     "name": "Symmetra",
-    "score": 6
+    "score": 6,
   },
   Object {
     "name": "Ana",
-    "score": 6
+    "score": 6,
   },
   Object {
     "name": "D.Va",
-    "score": 6
+    "score": 6,
   },
   Object {
     "name": "Bastion",
-    "score": 6
+    "score": 6,
   },
   Object {
     "name": "Torbjörn",
-    "score": 5
+    "score": 5,
   },
   Object {
     "name": "McCree",
-    "score": 5
+    "score": 5,
   },
   Object {
     "name": "Widowmaker",
-    "score": 4
+    "score": 4,
   },
   Object {
     "name": "Pharah",
-    "score": 4
-  }
+    "score": 4,
+  },
 ]
 `;
 
@@ -279,16 +372,16 @@ exports[`undersight getTopScores should calculate score for four enemy 1`] = `
 Array [
   Object {
     "name": "Soldier: 76",
-    "score": 8
+    "score": 8,
   },
   Object {
     "name": "Reaper",
-    "score": 4
+    "score": 4,
   },
   Object {
     "name": "Pharah",
-    "score": 0
-  }
+    "score": 0,
+  },
 ]
 `;
 
@@ -296,16 +389,16 @@ exports[`undersight getTopScores should calculate score for one enemy 1`] = `
 Array [
   Object {
     "name": "Soldier: 76",
-    "score": 2
+    "score": 2,
   },
   Object {
     "name": "Reaper",
-    "score": 1
+    "score": 1,
   },
   Object {
     "name": "Pharah",
-    "score": 0
-  }
+    "score": 0,
+  },
 ]
 `;
 
@@ -313,16 +406,16 @@ exports[`undersight getTopScores should calculate scores 1`] = `
 Array [
   Object {
     "name": "Soldier: 76",
-    "score": 6
+    "score": 6,
   },
   Object {
     "name": "Reaper",
-    "score": 3
+    "score": 3,
   },
   Object {
     "name": "Pharah",
-    "score": 0
-  }
+    "score": 0,
+  },
 ]
 `;
 
@@ -330,16 +423,16 @@ exports[`undersight getTopScores should calculate scores 2`] = `
 Array [
   Object {
     "name": "Pharah",
-    "score": 3
+    "score": 3,
   },
   Object {
     "name": "Soldier: 76",
-    "score": 0
+    "score": 0,
   },
   Object {
     "name": "Reaper",
-    "score": 0
-  }
+    "score": 0,
+  },
 ]
 `;
 
@@ -347,16 +440,16 @@ exports[`undersight getTopScores should calculate scores 3`] = `
 Array [
   Object {
     "name": "Reaper",
-    "score": 3
+    "score": 3,
   },
   Object {
     "name": "Soldier: 76",
-    "score": 0
+    "score": 0,
   },
   Object {
     "name": "Pharah",
-    "score": -3
-  }
+    "score": -3,
+  },
 ]
 `;
 
@@ -364,16 +457,16 @@ exports[`undersight getTopScores should calculate scores 4`] = `
 Array [
   Object {
     "name": "Soldier: 76",
-    "score": 2
+    "score": 2,
   },
   Object {
     "name": "Reaper",
-    "score": 2
+    "score": 2,
   },
   Object {
     "name": "Pharah",
-    "score": 0
-  }
+    "score": 0,
+  },
 ]
 `;
 
@@ -381,15 +474,15 @@ exports[`undersight getTopScores should calculate scores 5`] = `
 Array [
   Object {
     "name": "Reaper",
-    "score": 2
+    "score": 2,
   },
   Object {
     "name": "Soldier: 76",
-    "score": 2
+    "score": 2,
   },
   Object {
     "name": "Pharah",
-    "score": 0
-  }
+    "score": 0,
+  },
 ]
 `;

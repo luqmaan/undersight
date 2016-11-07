@@ -57,13 +57,12 @@ describe('undersight', () => {
       expect(getTeamPicksByHardCounterPrime(allCountersJSON, herosJSON, herosRanksJSON, ['Genji', 'Junkrat', 'Roadhog', 'Zenyatta', 'Hanzo', 'Reaper'], false)).toMatchSnapshot();
     });
   });
-  
+
   describe('getTeamPicksByHardCounterFlexRoles', () => {
-    fit('should return team picks', () => {
+    it('should return team picks', () => {
       const teamPicks = ['Tracer', 'Junkrat', 'Zarya', 'Reinhardt'];
       const roleCountGoal = {tank: 3, dps: 3, support: 0};
-      const newPicks = getTeamPicksByHardCounterFlexRoles(allCountersJSON, herosJSON, herosRanksJSON, teamPicks, roleCountGoal);
-      console.log(newPicks);
+      expect(getTeamPicksByHardCounterFlexRoles(allCountersJSON, herosJSON, herosRanksJSON, teamPicks, roleCountGoal)).toMatchSnapshot();
     });
   });
 });
