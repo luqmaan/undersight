@@ -58,26 +58,42 @@ export default class Calculator extends Component {
 
     const algorithms = [
       {
-        title: 'Sum of all scores',
+        title: 'Counters based on enemy team',
         description: (
           <div className="Description">
             <div className="Overview">Input: Enemy Team, Output: Your Team</div>
             <div className="Details">
-              <p>Takes the enemy team and returns who to pick based on who counters the most number of enemies. It loops through every hero in the game and determines how well they do against each character on the enemy team. This is assigned to a score.</p>
-              <p>A higher score is better. A negative score means you should avoid this hero, as the enemy team counters the very well.</p>
+              <p>This recommends heros that counter the most number of enemies. Use this when you know what the enemy team looks like.</p>
+              <p>A higher score is better. A negative score means you should avoid this hero, as the enemy team counters them very well.</p>
             </div>
           </div>
         ),
         scores: getTopScores(counters, nonEmptyPicks),
       },
       {
-        title: 'Your team hard counters',
-        description: <div></div>,
+        title: 'Counters based on your team',
+        description: (
+          <div className="Description">
+            <div className="Overview">Input: Your Team, Output: Your Team</div>
+            <div className="Details">
+              <p>This recommends heros that counter the widest variety of enemies. Use this before a match starts.</p>
+              <p>A higher score is better.</p>
+            </div>
+          </div>
+        ),
         scores: getTeamPicksByHardCounter(counters, heros, nonEmptyPicks),
       },
       {
-        title: 'Your team hard counters prime',
-        description: <div></div>,
+        title: 'Counters based on your team + Missing Roles + Master Overwatch Stats',
+        description: (
+          <div className="Description">
+            <div className="Overview">Input: Enemy Team, Output: Your Team</div>
+            <div className="Details">
+              <p>This recommends heros that counter widest variety of enemies. It also considers stats (popularity, KD ratio) from <a href="http://masteroverwatch.com/heroes/pc/global/mode/ranked" target="_blank">Master Overwatch</a> and the missing roles on your team. Use this before a match starts.</p>
+              <p>A higher score is better.</p>
+            </div>
+          </div>
+        ),
         scores: getTeamPicksByHardCounterPrime(counters, heros, herosRanks, nonEmptyPicks),
       },
     ];
