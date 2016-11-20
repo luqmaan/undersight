@@ -1,7 +1,25 @@
-.Toolbar {
+
+.Bottombar {
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
   background-color: rgba(255, 255, 255, 1) !important;
-  border-bottom: 1px solid rgba(206, 203, 207, 1);
+  border-top: 1px solid rgba(206, 203, 207, 1);
 }
-.Toolbar a {
-  color: rgba(40, 53, 77, 1) !important;
+.Bottombar a {
+  color: rgba(206, 203, 207, 1);
+  flex: 1;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0;
+  border-right: 1px solid rgba(206, 203, 207, 1);
+  font-size: 0.9em;
+  text-decoration: none;
+}
+.Bottombar a:last-child {
+  border: none;
+}
+.Bottombar a.active {
+  color: rgba(93, 93, 93, 1);
 }

@@ -7,11 +7,12 @@ html {
 body {
   margin: 0;
   padding: 0;
+  padding-bottom: 60px;
   font-family: sans-serif;
   background: #f0edf2;
-  color: #555555;
+  color: rgba(93, 93, 93, 1);
   line-height: 1.5;
 }
 a {
-    color: #00a5e2;
+  color: #555555;
 }
