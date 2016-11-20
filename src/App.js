@@ -11,7 +11,7 @@ export default class App extends Component {
     return (
       <HashRouter>
         <div className="App">
-          <Toolbar>
+          <Toolbar className="Tools">
             <NavItem is={Link} to="/reference">Reference</NavItem>
             <NavItem is={Link} to="/calculator">Calculator</NavItem>
           </Toolbar>

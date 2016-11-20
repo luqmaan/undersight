@@ -10,6 +10,7 @@ body {
   font-family: sans-serif;
   background: #f0edf2;
   color: #555555;
+  line-height: 1.5;
 }
 a {
     color: #00a5e2;

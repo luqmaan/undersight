@@ -30,6 +30,11 @@
     "icon": "tracer.png"
   },
   {
+    "name": "Sombra",
+    "role": "Offense",
+    "icon": "tracer.png"
+  },
+  {
     "name": "Bastion",
     "role": "Defense",
     "icon": "bastion.png"

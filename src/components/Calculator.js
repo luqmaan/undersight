@@ -132,7 +132,38 @@ export default class Calculator extends Component {
     return (
       <div className="Calculator">
         <div className="HeroPicker">
-          {heros.map((hero) => <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />)}
+          <div className="Role">
+            <div className="Label">Offense</div>
+            <div className="Icons">
+              {heros.filter((hero) => hero.role === 'Offense').map((hero) => (
+                <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />
+              ))}
+            </div>
+          </div>
+          <div className="Role">
+            <div className="Label">Defense</div>
+            <div className="Icons">
+              {heros.filter((hero) => hero.role === 'Defense').map((hero) => (
+                <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />
+              ))}
+            </div>
+          </div>
+          <div className="Role">
+            <div className="Label">Tank</div>
+            <div className="Icons">
+              {heros.filter((hero) => hero.role === 'Tank').map((hero) => (
+                <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />
+              ))}
+            </div>
+          </div>
+          <div className="Role">
+            <div className="Label">Support</div>
+            <div className="Icons">
+              {heros.filter((hero) => hero.role === 'Support').map((hero) => (
+                <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />
+              ))}
+            </div>
+          </div>
         </div>
         <div className="EnemyTeamWrapper">
           <div className="EnemyTeam">
@@ -144,7 +175,7 @@ export default class Calculator extends Component {
         </div>
         {this.state.algorithms.map((algorithm) => (
           <div key={algorithm.title} className="Algorithm">
-            <div classname="Title">{algorithm.title}</div>
+            <div className="Title">{algorithm.title}</div>
             {algorithm.description}
             <ResultsContainer title={algorithm.title} scores={algorithm.scores} />
           </div>
