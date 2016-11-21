@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import classnames from 'classnames';
 import findIndex from 'lodash/findIndex';
 import range from 'lodash/range';
 import isNil from 'lodash/isNil';
@@ -44,6 +45,12 @@ export default class Calculator extends Component {
     const enemyPicks = [...this.state.enemyPicks];
     delete enemyPicks[index];
     this.setState({enemyPicks}, () => this.recompute(enemyPicks));
+  }
+
+  clearAllPicks = () => {
+    this.setState({
+      enemyPicks: new Array(6),
+    })
   }
 
   recompute = () => {
@@ -208,11 +215,30 @@ export default class Calculator extends Component {
 
   render() {
     return (
-      <div className="Calculator">
-        {this.state.showResults
-          ? this.renderResults()
-          : this.renderPicker()
-        }
+      <div>
+        <div className="Topbar">
+          <div className="Action Left">
+            {this.state.showResults && (
+              <button onClick={() => this.setState({showResults: false})}>
+                Edit
+              </button>
+            )}
+          </div>
+          <div className="Action Right">
+            {!this.state.showResults && (
+              <button onClick={() => this.clearAllPicks()}>
+                Clear All
+              </button>
+            )}
+          </div>
+      </div>
+
+        <div className="Calculator">
+          {this.state.showResults
+            ? this.renderResults()
+            : this.renderPicker()
+          }
+        </div>
       </div>
     );
   }
