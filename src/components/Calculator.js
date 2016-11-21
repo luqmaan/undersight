@@ -26,6 +26,7 @@ export default class Calculator extends Component {
       enemyPicks: new Array(6),
       algorithms: [],
       isLoading: true,
+      showResults: false,
     };
   }
 
@@ -128,44 +129,13 @@ export default class Calculator extends Component {
     this.setState({algorithms, isLoading: false});
   }, 500);
 
-  render() {
+  renderPicker() {
     return (
-      <div className="Calculator">
-        <div className="HeroPicker">
-          <div className="Role">
-            <div className="Label">Offense</div>
-            <div className="Icons">
-              {heros.filter((hero) => hero.role === 'Offense').map((hero) => (
-                <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />
-              ))}
-            </div>
+      <div>
+        <div className="Section">
+          <div className="SectionTitle">
+            Enemy Team
           </div>
-          <div className="Role">
-            <div className="Label">Defense</div>
-            <div className="Icons">
-              {heros.filter((hero) => hero.role === 'Defense').map((hero) => (
-                <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />
-              ))}
-            </div>
-          </div>
-          <div className="Role">
-            <div className="Label">Tank</div>
-            <div className="Icons">
-              {heros.filter((hero) => hero.role === 'Tank').map((hero) => (
-                <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />
-              ))}
-            </div>
-          </div>
-          <div className="Role">
-            <div className="Label">Support</div>
-            <div className="Icons">
-              {heros.filter((hero) => hero.role === 'Support').map((hero) => (
-                <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />
-              ))}
-            </div>
-          </div>
-        </div>
-        <div className="EnemyTeamWrapper">
           <div className="EnemyTeam">
             {range(6).map((i) => {
               const name = this.state.enemyPicks[i];
@@ -173,6 +143,58 @@ export default class Calculator extends Component {
             })}
           </div>
         </div>
+        <div className="Section">
+          <div className="SectionTitle">
+            Add To Enemy Team
+          </div>
+          <div className="HeroPicker">
+            <div className="Role">
+              <div className="Label">Offense</div>
+              <div className="Icons">
+                {heros.filter((hero) => hero.role === 'Offense').map((hero) => (
+                  <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />
+                ))}
+              </div>
+            </div>
+            <div className="Role">
+              <div className="Label">Defense</div>
+              <div className="Icons">
+                {heros.filter((hero) => hero.role === 'Defense').map((hero) => (
+                  <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />
+                ))}
+              </div>
+            </div>
+            <div className="Role">
+              <div className="Label">Tank</div>
+              <div className="Icons">
+                {heros.filter((hero) => hero.role === 'Tank').map((hero) => (
+                  <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />
+                ))}
+              </div>
+            </div>
+            <div className="Role">
+              <div className="Label">Support</div>
+              <div className="Icons">
+                {heros.filter((hero) => hero.role === 'Support').map((hero) => (
+                  <HeroIcon name={hero.name} key={hero.name} onClick={() => this.addPick(hero.name)} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+        {compact(this.state.enemyPicks).length > 0 && (
+          <button
+            className="NextButton"
+            onClick={() => this.setState({showResults: !this.state.showResults})}
+          >Results</button>
+        )}
+      </div>
+    );
+  }
+
+  renderResults() {
+    return (
+      <div>
         {this.state.algorithms.map((algorithm) => (
           <div key={algorithm.title} className="Algorithm">
             <div className="Title">{algorithm.title}</div>
@@ -180,6 +202,17 @@ export default class Calculator extends Component {
             <ResultsContainer title={algorithm.title} scores={algorithm.scores} />
           </div>
         ))}
+      </div>
+    );
+  }
+
+  render() {
+    return (
+      <div className="Calculator">
+        {this.state.showResults
+          ? this.renderResults()
+          : this.renderPicker()
+        }
       </div>
     );
   }
