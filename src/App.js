@@ -15,8 +15,8 @@ export default class App extends Component {
     return (
       <HashRouter>
         <div className="App">
-          <Match pattern="/reference" component={Reference} />
-          <Match pattern="/reference/:heroName" component={Reference} />
+          <Match pattern="/reference" component={Reference} exactly />
+          <Match pattern="/reference/:heroName" component={Reference} exactly />
           <Match pattern="/calculator" component={Calculator} />
           <Miss component={() => <Redirect to="/calculator" />} />
           <div className="Bottombar">
