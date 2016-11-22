@@ -1,11 +1,17 @@
-
+.App {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
 .Topbar {
   width: 100vw;
   background: rgb(254, 254, 255);
   border-bottom: 1px solid rgba(206, 203, 207, 1);
+  box-shadow: 0 0 5px rgba(189, 187, 191, 0.4);
   display: flex;
   padding: 5px;
   color: rgba(93, 93, 93, 1);
+  position: fixed;
+  top: 0;
 }
 
 .Topbar .Action {
