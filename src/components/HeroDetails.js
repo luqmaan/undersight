@@ -1,32 +1,53 @@
 import React, {Component} from 'react';
 import {Card, CardImage, Heading, Text} from 'rebass';
+import {Redirect} from 'react-router'
+import sortBy from 'lodash/sortBy';
 
 import heros from '../data/heros';
 import counters from '../data/counters';
-import {getHero, getHeroCounters} from '../lib/undersight';
+import {getHero, getCounterTo, getCounteredBy} from '../lib/undersight';
 import HeroIcon from './HeroIcon';
+
 
 export default function HeroDetails({heroName}) {
   const hero = getHero(heros, heroName);
+  const counterTo = getCounterTo(counters, heroName).filter(counter => counter.score === 2);
+  const counteredBy = getCounteredBy(counters, heroName).filter(counter => counter.score === 2);
+
   return (
-    <div className="HeroDetails">
-        <HeroIcon name={hero.name} hideName />
-        <Heading size={3}>{hero.name}</Heading>
-        <Heading size={6}>{hero.role}</Heading>
-        <div className="Instructions">
-        {`Genjis power and survivability stems entirely from mobility.
-He needs to keep chaining eliminations and dashes to stay relevant.
-Winston is a good choice to counter him because he has enough health to survive anything Genji might do to him quickly and his lightning gun can keep applying pressure no matter how fast Genji moves.
-Mei has an even better time, because she can freeze herself to dodge the worst of Genji's burst damage capability before freezing him to bring his killing spree to a close.`}
-        </div>
-        <div>
-          {getHeroCounters(counters, heroName).map((counter) => (
-            <div key={counter.enemy} className="Counter">
-              <HeroIcon name={counter.enemy} />
-              <div className="Score">{counter.score}</div>
+    <div>
+      <HeroIcon name={hero.name} huge />
+      <div className="HeroDetails">
+          <div className="Instructions"></div>
+          <div>
+            <div className="Title">{heroName} is countered by</div>
+            <div className="Counters">
+              {counteredBy.map((counter) => (
+                <div key={counter.you} className="Counter">
+                  <HeroIcon
+                    name={counter.you}
+                    onClick={() => window.location.hash = `/reference/${counter.you}`}
+                  />
+                </div>
+              ))}
+              {counteredBy.length === 0 && "Nobody"}
             </div>
-          ))}
-        </div>
+          </div>
+          <div>
+            <div className="Title">{heroName} is a counter to</div>
+              <div className="Counters">
+                {counterTo.map((counter) => (
+                  <div key={counter.enemy} className="Counter">
+                    <HeroIcon
+                      name={counter.enemy}
+                      onClick={() => window.location.hash = `/reference/${counter.enemy}`}
+                    />
+                  </div>
+                ))}
+                {counterTo.length === 0 && "Nobody"}
+              </div>
+          </div>
+      </div>
     </div>
   );
 }

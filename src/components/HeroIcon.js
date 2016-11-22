@@ -1,13 +1,14 @@
 import React, {PropTypes} from 'react';
 import classNames from 'classnames';
 
+import './HeroIcon.css';
 import heros from '../data/heros.json';
 import {getHero} from '../lib/undersight';
 
-export default function HeroIcon({name, onClick, hideName}) {
+export default function HeroIcon({name, onClick, hideName, huge}) {
   const hero = name ? getHero(heros, name) : null;
   return (
-    <div className={classNames("HeroIcon", {'Missing': !hero})} onClick={onClick}>
+    <div className={classNames("HeroIcon", {'Missing': !hero, 'Huge': huge, 'Clickable': !!onClick})} onClick={onClick}>
       <div className="HeroIconImage">
         {hero && <img src={`heros/${hero.icon}`} alt={hero.name} />}
       </div>

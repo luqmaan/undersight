@@ -20,9 +20,16 @@ export function getTopScores(counters, enemyPicks) {
   return sortBy(map(scores, (score, name) => ({score, name})), 'score').reverse();
 }
 
-export function getHeroCounters(counters, heroName) {
+export function getCounterTo(counters, heroName) {
   return sortBy(
     counters.filter((counter) => counter.you === heroName),
+    'score'
+  ).reverse();
+}
+
+export function getCounteredBy(counters, heroName) {
+  return sortBy(
+    counters.filter((counter) => counter.enemy === heroName),
     'score'
   ).reverse();
 }
@@ -122,7 +129,7 @@ export function getTeamPicksByHardCounterFlexRoles(counters, heros, herosRanks, 
       .filter((counter) => counter.you === heroName && counter.score === 2)
       .map((counter) => counter.enemy);
   })));
-  
+
   const roleCounts = teamPicks
     .map((heroName) => {
       return herosRanks.filter((hero) => hero.name === heroName)[0].teamRole;
@@ -131,7 +138,7 @@ export function getTeamPicksByHardCounterFlexRoles(counters, heros, herosRanks, 
       prev[cur]--;
       return prev;
     }, roleCountGoal);
-    
+
   const uncounteredHeros = difference(allHeros, teamHardCounters);
 
   const scores = sortBy(herosRanks.map((hero) => {
@@ -143,7 +150,7 @@ export function getTeamPicksByHardCounterFlexRoles(counters, heros, herosRanks, 
     }, 0);
 
     const roleRank = 10 - hero.roleRank;
-    
+
     const roleCount = roleCounts[hero.teamRole];
     const adjRoleCount = roleCount > 0 ? roleCount : roleCount - 3;
     const roleBonus = adjRoleCount * 2;

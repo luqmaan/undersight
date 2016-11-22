@@ -1,0 +1,61 @@
+.Algorithm {
+  margin: 15px 0;
+}
+.ResultsGrid {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(206, 203, 207);
+  border-radius: 5px;
+  overflow: hidden;
+
+}
+.ResultsTitle {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.ResultsContainer .Results {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  border-right: 1px solid rgb(248, 247, 249);
+}
+.ResultsContainer .Results:last-child {
+  border: none;
+}
+.Results .Title {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding: 5px 0;
+  background: rgb(248, 247, 249);
+  font-size: 0.9em;
+  border-bottom: 1px solid rgb(206, 203, 207);
+}
+.Result .List {
+  padding-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.Counter {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid rgb(248, 247, 249);
+  padding-top: 5px;
+}
+.Counter:last-child {
+  border: none;
+}
+.Counter .Score {
+  font-size: 0.9em;
+  padding-bottom: 0.6em;
+  margin-left: 10px;
+}
+.Counter .Role {
+  font-size: 0.6em;
+  text-align: center;
+  margin-top: 2px;
+}

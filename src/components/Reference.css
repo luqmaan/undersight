@@ -1,32 +1,51 @@
 .HeroList {
-    background-color: #fff;
-    margin: 5px;
-    border-radius: 5px;
-    border: 1px solid #cecbcf;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecbcf;
+  background: #fff;
+  overflow: hidden;
 }
-
 .Row {
-    background: #fafafa;
-    padding: 5px 10px 5px 5px;
-    border-bottom: 1px solid #cecbcf;
-    display: flex;
-    align-items: center;
+  padding: 5px 10px 5px 5px;
+  border-bottom: 1px solid #cecbcf;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.Row:hover {
+  background: rgb(240, 240, 241);
+}
+.Row:focus, .Row:active {
+  background: rgb(218, 216, 220);
 }
 .Row .Middle {
-    display: flex;
-    flex: 1;
-    padding: 0 15px;
+  display: flex;
+  flex: 1;
+  padding: 0 15px;
 }
 
 .HeroDetails {
-    background-color: #fff;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #cecbcf;
+  background-color: #fff;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #cecbcf;
+}
+.HeroDetails .Title {
+  font-size: 1em;
 }
 .HeroDetails .Instructions {
-    white-space: pre-wrap;
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+  white-space: pre-wrap;
+  font-size: 0.8emm;
+  line-height: 1.2emm;
+}
+.HeroDetails .Counters {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+}
+.HeroDetails .Counters .Counter {
+  margin-right: 10px;
+  margin-bottom: 10px;
 }

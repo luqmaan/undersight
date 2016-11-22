@@ -1,0 +1,91 @@
+.Calculator {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.EnemyTeam {
+  background-color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #cecbcf;
+  display: flex;
+  margin: 0 auto 10px;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.Modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(206, 203, 207, 0.8);
+  top: 0;
+  left: 0;
+  padding: 60px 5px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 100;
+}
+.HeroPicker {
+  background: #ffffff;
+  border: 1px solid #cecbcf;
+  border-radius: 5px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  width: 100%;
+  max-width: 500px;
+}
+.HeroPicker .HeroIcon {
+  margin: 0 4px;
+}
+.HeroPicker .Role {
+  border-bottom: 1px solid rgba(240, 237, 242, 1);
+  padding: 0 0 5px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.HeroPicker .Role:last-child {
+  border: none;
+}
+.HeroPicker .Role .Label {
+  display: flex;
+  align-self: center;
+  font-size: 0.7em;
+  color: rgba(177, 174, 178, 1);
+  align-items: center;
+  margin: 5px;
+}
+.HeroPicker .Role .Icons {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.Section {
+  margin-top: 15px;
+}
+.SectionTitle {
+  font-size: 0.9em;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.NextButton {
+  font-size: 1em;
+  color: rgb(83, 106, 194);
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(168, 170, 198, 1);
+  margin: 15px 0;
+  border-radius: 5px;
+  padding: 10px 5px;
+  justify-content: center;
+  width: 100%;
+  cursor: pointer;
+}
