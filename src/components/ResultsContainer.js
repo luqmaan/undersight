@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import shallowCompare from 'react-addons-shallow-compare'
 
+import './ResultsContainer.css';
 import Results from './Results';
 
 import take from 'lodash/take';
@@ -26,24 +27,27 @@ export default class ResultsContainer extends Component {
 
     return (
       <div className="ResultsContainer">
-        {scores.length > 0 && (
-          <Results title="Good" scores={take(scores, 6)} />
-        )}
-        {scores.length > 0 && (
-          <Results
-            title="Bad"
-            scores={take(scores.reverse().filter((score) => !isSupport(heros, score.name)), 6)}
-          />
-        )}
-        {rolePicks && (
-          <Results title="By Role" scores={[
-              head(rolePicks.Offense),
-              head(rolePicks.Defense),
-              head(rolePicks.Tank),
-              head(rolePicks.Support),
-            ]}
-          />
-        )}
+        <div className="ResultsTitle">{this.props.title}</div>
+        <div className="ResultsGrid">
+          {scores.length > 0 && (
+            <Results title="Use" scores={take(scores, 6)} />
+          )}
+          {scores.length > 0 && (
+            <Results
+              title="Avoid"
+              scores={take(scores.reverse().filter((score) => !isSupport(heros, score.name)), 6)}
+            />
+          )}
+          {rolePicks && (
+            <Results title="By Role" scores={[
+                head(rolePicks.Offense),
+                head(rolePicks.Defense),
+                head(rolePicks.Tank),
+                head(rolePicks.Support),
+              ]}
+            />
+          )}
+        </div>
       </div>
     );
   }

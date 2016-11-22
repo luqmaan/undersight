@@ -67,7 +67,7 @@ export default class Calculator extends Component {
 
     const algorithms = [
       {
-        title: 'Counters based on enemy team',
+        title: 'Who counters the enemy team?',
         description: (
           <div className="Description">
             <div className="Overview">Input: Enemy Team, Output: Your Team</div>

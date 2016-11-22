@@ -76,46 +76,6 @@
   cursor: pointer;
 }
 
-@media (min-width: 600px) {
-  .ResultsContainer {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.Results {
-  background: #fff;
-  margin: 10px 0;
-  border: 1px solid #cecbcf;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
-}
-.Results .Title {
-  margin: 0;
-  padding: 0;
-  background: #888aab;
-  color: #fff;
-  padding: 5px;
-  text-transform: uppercase;
-  font-size: 0.8em;
-}
-.ResultList {
-  padding-top: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-.Counter .Score {
-  color: #0088ff;
-  font-size: 0.9em;
-  text-align: center;
-}
-.Counter .Role {
-  font-size: 0.6em;
-  text-align: center;
-  margin-top: 2px;
-}
-
 .HeroIcon {
   display: flex;
   width: 55px;
@@ -161,25 +121,4 @@
 }
 .HeroIcon:focus .Missing .HeroIconName  {
   color: #b1aeb2;
-}
-
-.Algorithm {
-  border-bottom: 1px solid #888aab;
-  padding-bottom: 15px;
-  margin-top: 15px;
-}
-.Algorithm:last-child {
-  border: none;
-}
-.Algorithm .Title {
-  font-size: 1em;
-  font-weight: bold;
-}
-.Algorithm .Overview {
-  font-size: 0.9em;
-  font-weight: bold;
-  margin-bottom: 1em;
-}
-.Algorithm .Description {
-  font-size: 0.8em;
 }
