@@ -140,9 +140,6 @@ export default class Calculator extends Component {
     return (
       <div>
         <div className="Section">
-          <div className="SectionTitle">
-            Enemy Team
-          </div>
           <div className="EnemyTeam">
             {range(6).map((i) => {
               const name = this.state.enemyPicks[i];
@@ -220,12 +217,16 @@ export default class Calculator extends Component {
           <div className="Action Left">
             {this.state.showResults && (
               <button onClick={() => this.setState({showResults: false})}>
-                Edit
+                Edit Team
               </button>
             )}
           </div>
+          <div className="Action Center">
+            {!this.state.showResults && 'Enemy Team'}
+            {this.state.showResults && 'Results'}
+          </div>
           <div className="Action Right">
-            {!this.state.showResults && (
+            {!this.state.showResults && (compact(this.state.enemyPicks).length > 0) && (
               <button onClick={() => this.clearAllPicks()}>
                 Clear All
               </button>

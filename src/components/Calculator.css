@@ -65,7 +65,7 @@
 }
 .NextButton {
   font-size: 1em;
-  color: rgba(65, 79, 152, 1);
+  color: rgb(83, 106, 194);
   background: rgba(255, 255, 255, 1);
   border: 1px solid rgba(168, 170, 198, 1);
   margin: 15px 0;
@@ -186,10 +186,11 @@
 
 .Topbar {
   width: 100vw;
-  background: rgba(255, 255, 255, 1);
+  background: rgb(254, 254, 255);
   border-bottom: 1px solid rgba(206, 203, 207, 1);
   display: flex;
   padding: 5px;
+  color: rgba(93, 93, 93, 1);
 }
 
 .Topbar .Action {
@@ -202,6 +203,7 @@
   border: none;
   cursor: pointer;
   font-size: 1em;
+  color: rgb(83, 106, 194);
 }
 
 .Topbar .Action.disabled {
