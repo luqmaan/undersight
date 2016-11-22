@@ -145,7 +145,7 @@ export default class Calculator extends Component {
           <button
             className="NextButton"
             onClick={() => this.setState({showResults: !this.state.showResults})}
-          >Results</button>
+          >Calculate</button>
         )}
       </div>
     );
@@ -169,6 +169,11 @@ export default class Calculator extends Component {
       <div>
         <div className="Topbar">
           <div className="Action Left">
+            {!this.state.showResults && (compact(this.state.enemyPicks).length > 0) && (
+              <button onClick={() => this.clearAllPicks()}>
+                Clear All
+              </button>
+            )}
             {this.state.showResults && (
               <button onClick={() => this.setState({showResults: false})}>
                 Edit Team
@@ -181,8 +186,8 @@ export default class Calculator extends Component {
           </div>
           <div className="Action Right">
             {!this.state.showResults && (compact(this.state.enemyPicks).length > 0) && (
-              <button onClick={() => this.clearAllPicks()}>
-                Clear All
+              <button onClick={() => this.setState({showResults: !this.state.showResults})}>
+                Calculate
               </button>
             )}
           </div>
