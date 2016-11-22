@@ -38,13 +38,13 @@ export default class Calculator extends Component {
       return;
     }
     enemyPicks[emptyIndex] = pick;
-    this.setState({enemyPicks}, () => this.recompute(enemyPicks));
+    this.setState({enemyPicks});
   }
 
   removePickAtIndex = (index) => {
     const enemyPicks = [...this.state.enemyPicks];
     delete enemyPicks[index];
-    this.setState({enemyPicks}, () => this.recompute(enemyPicks));
+    this.setState({enemyPicks});
   }
 
   clearAllPicks = () => {
@@ -52,38 +52,6 @@ export default class Calculator extends Component {
       enemyPicks: new Array(6),
     })
   }
-
-  recompute = () => {
-    this.setState({isLoading: true}, () => this.recomputeInner());
-  }
-
-  recomputeInner = debounce(() => {
-    const nonEmptyPicks = compact(this.state.enemyPicks);
-
-    if (nonEmptyPicks.length === 0) {
-      this.setState({algorithms: [], isLoading: false});
-      return;
-    }
-
-    const algorithms = [
-      {
-        title: 'Who counters the enemy team?',
-        description: (
-          <div className="Description">
-            <div className="Overview">Input: Enemy Team, Output: Your Team</div>
-            <div className="Details">
-              <p>This recommends heros that counter the most number of enemies. Use this when you know what the enemy team looks like.</p>
-              <p>A higher score is better. A negative score means you should avoid this hero, as the enemy team counters them very well.</p>
-            </div>
-          </div>
-        ),
-        scores: getTopScores(counters, nonEmptyPicks),
-      },
-    ];
-
-    this.setState({algorithms, isLoading: false});
-  }, 500);
-
 
   renderEnemyTeam() {
     return (
@@ -151,19 +119,6 @@ export default class Calculator extends Component {
     );
   }
 
-  renderResults() {
-    return (
-      <div>
-        {this.renderEnemyTeam()}
-        {this.state.algorithms.map((algorithm) => (
-          <div key={algorithm.title} className="Algorithm">
-            <ResultsContainer title={algorithm.title} scores={algorithm.scores} />
-          </div>
-        ))}
-      </div>
-    );
-  }
-
   render() {
     return (
       <div>
@@ -176,12 +131,12 @@ export default class Calculator extends Component {
             )}
             {this.state.showResults && (
               <button onClick={() => this.setState({showResults: false})}>
-                Edit Team
+                Edit Teams
               </button>
             )}
           </div>
           <div className="Action Center">
-            {!this.state.showResults && 'Enemy Team'}
+            {!this.state.showResults && 'Enter Teams'}
             {this.state.showResults && 'Results'}
           </div>
           <div className="Action Right">
@@ -195,7 +150,7 @@ export default class Calculator extends Component {
 
         <div className="Calculator">
           {this.state.showResults
-            ? this.renderResults()
+            ? <ResultsContainer enemyPicks={this.state.enemyPicks} />
             : this.renderPicker()
           }
         </div>
