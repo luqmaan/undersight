@@ -1,5 +1,5 @@
 import React from 'react';
-import HeroIcon from './HeroIcon';
+import HeroIcon from '../HeroIcon';
 
 export default function Results({scores, title}) {
   return (

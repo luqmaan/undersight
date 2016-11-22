@@ -18,7 +18,7 @@ import {
 import './Calculator.css';
 
 import HeroIcon from '../HeroIcon';
-import ResultsContainer from '../ResultsContainer';
+import ResultsContainer from './ResultsContainer';
 
 
 export default class TeamPicker extends Component {

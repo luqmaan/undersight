@@ -8,11 +8,11 @@ import compact from 'lodash/compact';
 import './ResultsContainer.css';
 import Results from './Results';
 
-import counters from '../data/counters.json';
-import heros from '../data/heros.json';
-import herosRanks from '../data/heros_ranks.json';
+import counters from '../../data/counters.json';
+import heros from '../../data/heros.json';
+import herosRanks from '../../data/heros_ranks.json';
 
-import {isSupport, getRole, getTopScores, getTeamPicksByHardCounterFlexRoles} from '../lib/undersight';
+import {isSupport, getRole, getTopScores, getTeamPicksByHardCounterFlexRoles} from '../../lib/undersight';
 
 export default class ResultsContainer extends Component {
   static propTypes = {
@@ -71,7 +71,7 @@ export default class ResultsContainer extends Component {
 
   render() {
     return (
-      <div className="ResultsContaine9r">
+      <div className="ResultsContainer">
         {this.state.algorithms.map(({scores, title}) => (
           <div key={title} className="Algorithm">
             <div className="ResultsTitle">{title}</div>

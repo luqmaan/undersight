@@ -13,7 +13,7 @@ import herosRanks from '../../data/heros_ranks.json';
 import './Calculator.css';
 
 import HeroIcon from '../HeroIcon';
-import ResultsContainer from '../ResultsContainer';
+import ResultsContainer from './ResultsContainer';
 
 import TeamPicker from './TeamPicker';
 
