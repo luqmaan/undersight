@@ -28,10 +28,10 @@
   text-align: center;
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid rgb(248, 247, 249);
   padding: 5px 0;
   background: rgb(248, 247, 249);
   font-size: 0.9em;
+  border-bottom: 1px solid rgb(206, 203, 207);
 }
 .Result .List {
   padding-top: 5px;

@@ -30,21 +30,12 @@ export default class ResultsContainer extends Component {
         <div className="ResultsTitle">{this.props.title}</div>
         <div className="ResultsGrid">
           {scores.length > 0 && (
-            <Results title="Use" scores={take(scores, 6)} />
+            <Results title="Use" scores={take(scores, 7)} />
           )}
           {scores.length > 0 && (
             <Results
               title="Avoid"
-              scores={take(scores.reverse().filter((score) => !isSupport(heros, score.name)), 6)}
-            />
-          )}
-          {rolePicks && (
-            <Results title="By Role" scores={[
-                head(rolePicks.Offense),
-                head(rolePicks.Defense),
-                head(rolePicks.Tank),
-                head(rolePicks.Support),
-              ]}
+              scores={take(scores.reverse().filter((score) => !isSupport(heros, score.name)), 7)}
             />
           )}
         </div>
