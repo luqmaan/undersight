@@ -10,13 +10,14 @@ import Results from './Results';
 
 import counters from '../data/counters.json';
 import heros from '../data/heros.json';
+import herosRanks from '../data/heros_ranks.json';
 
-import {isSupport, getRole, getTopScores} from '../lib/undersight';
+import {isSupport, getRole, getTopScores, getTeamPicksByHardCounterFlexRoles} from '../lib/undersight';
 
 export default class ResultsContainer extends Component {
   static propTypes = {
-    enemyPicks: PropTypes.array,
-    teamPicks: PropTypes.array,
+    enemyTeam: PropTypes.array,
+    yourTeam: PropTypes.array,
   }
 
   constructor(props) {
@@ -37,41 +38,40 @@ export default class ResultsContainer extends Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    if (nextProps.enemyPicks !== this.props.enemyPicks) {
+    if (nextProps.enemyTeam !== this.props.enemyTeam) {
       this.recompute();
     }
   }
 
   recompute = () => {
-    const nonEmptyPicks = compact(this.props.enemyPicks);
+    let algorithms = [];
 
-    if (nonEmptyPicks.length === 0) {
-      this.setState({algorithms: []});
-      return;
+    if (compact(this.props.enemyTeam).length > 0) {
+      algorithms = [
+        ...algorithms,
+        {
+          title: 'Who counters the enemy team?',
+          scores: getTopScores(counters, compact(this.props.enemyTeam)),
+        },
+      ];
     }
 
-    const algorithms = [
-      {
-        title: 'Who counters the enemy team?',
-        description: (
-          <div className="Description">
-            <div className="Overview">Input: Enemy Team, Output: Your Team</div>
-            <div className="Details">
-              <p>This recommends heros that counter the most number of enemies. Use this when you know what the enemy team looks like.</p>
-              <p>A higher score is better. A negative score means you should avoid this hero, as the enemy team counters them very well.</p>
-            </div>
-          </div>
-        ),
-        scores: getTopScores(counters, nonEmptyPicks),
-      },
-    ];
+    if (compact(this.props.yourTeam).length > 0) {
+      algorithms = [
+        ...algorithms,
+        {
+          title: 'Whats missing from your team?',
+          scores: getTeamPicksByHardCounterFlexRoles(counters, heros, herosRanks, compact(this.props.yourTeam), {tank: 2, dps: 2, support: 2}),
+        },
+      ];
+    }
 
     this.setState({algorithms});
   }
 
   render() {
     return (
-      <div className="ResultsContainer">
+      <div className="ResultsContaine9r">
         {this.state.algorithms.map(({scores, title}) => (
           <div key={title} className="Algorithm">
             <div className="ResultsTitle">{title}</div>

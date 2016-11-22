@@ -12,13 +12,25 @@
   border-radius: 5px;
   border: 1px solid #cecbcf;
   display: flex;
-  margin: auto;
+  margin: 0 auto 10px;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
   width: 100%;
 }
 
+.Modal {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(206, 203, 207, 0.7);
+  top: 0;
+  left: 0;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .HeroPicker {
   background: #ffffff;
   border: 1px solid #cecbcf;
@@ -28,6 +40,7 @@
   flex-direction: column;
   flex: 1;
   width: 100%;
+  max-width: 500px;
 }
 .HeroPicker .HeroIcon {
   margin: 0 4px;
