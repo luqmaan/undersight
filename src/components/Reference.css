@@ -3,14 +3,21 @@
     margin: 5px;
     border-radius: 5px;
     border: 1px solid #cecbcf;
+    background: #fafafa;
 }
 
 .Row {
-    background: #fafafa;
     padding: 5px 10px 5px 5px;
     border-bottom: 1px solid #cecbcf;
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+.Row:hover {
+  background: rgb(240, 237, 242);
+}
+.Row:focus, .Row:active {
+  background: rgb(218, 216, 220);
 }
 .Row .Middle {
     display: flex;
@@ -27,6 +34,11 @@
 }
 .HeroDetails .Instructions {
     white-space: pre-wrap;
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: 0.8emm;
+    line-height: 1.2emm;
+}
+.HeroDetails .Counters {
+  margin: 15px;
+  display: flex;
+  justify-content: space-between;
 }

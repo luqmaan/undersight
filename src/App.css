@@ -1,4 +1,45 @@
 
+.Topbar {
+  width: 100vw;
+  background: rgb(254, 254, 255);
+  border-bottom: 1px solid rgba(206, 203, 207, 1);
+  display: flex;
+  padding: 5px;
+  color: rgba(93, 93, 93, 1);
+}
+
+.Topbar .Action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Topbar .Action button, .Topbar .Action a {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1em;
+  color: rgb(83, 106, 194);
+  text-decoration: none;
+}
+
+.Topbar .Action.disabled {
+  color: rgba(206, 203, 207, 1);
+}
+
+.Topbar .Left {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.Topbar .Center {
+  flex: 1;
+}
+
+.Topbar .Right {
+  flex: 1;
+  justify-content: flex-end;
+}
+
 .Bottombar {
   position: fixed;
   bottom: 0;

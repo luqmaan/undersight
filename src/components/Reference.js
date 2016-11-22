@@ -36,11 +36,27 @@ export default class Reference extends Component {
     const {params} = this.props;
     const {heroName} = params || {};
     return (
-      <div className="Reference" >
-        {heroName
-          ? <HeroDetails heroName={heroName} />
-          : <HeroList />
-        }
+      <div>
+          <div className="Topbar">
+            <div className="Action Left">
+              {heroName && (
+                <Link to="/reference">
+                  All Heros
+                </Link>
+              )}
+            </div>
+            <div className="Action Center">
+              {heroName || 'All Heros'}
+            </div>
+            <div className="Action Right">
+            </div>
+        </div>
+        <div className="Reference">
+          {heroName
+            ? <HeroDetails heroName={heroName} />
+            : <HeroList />
+          }
+        </div>
       </div>
     );
   }

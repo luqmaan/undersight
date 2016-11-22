@@ -79,73 +79,28 @@ export default class Calculator extends Component {
         ),
         scores: getTopScores(counters, nonEmptyPicks),
       },
-      {
-        title: 'Counters based on your team',
-        description: (
-          <div className="Description">
-            <div className="Overview">Input: Your Team, Output: Your Team</div>
-            <div className="Details">
-              <p>This recommends heros that counter the widest variety of enemies. Use this before a match starts.</p>
-              <p>A higher score is better.</p>
-            </div>
-          </div>
-        ),
-        scores: getTeamPicksByHardCounter(counters, heros, nonEmptyPicks),
-      },
-      {
-        title: 'Counters based on your team + Missing Roles + Master Overwatch Stats',
-        description: (
-          <div className="Description">
-            <div className="Overview">Input: Your Team, Output: Your Team</div>
-            <div className="Details">
-              <p>This recommends heros that counter widest variety of enemies. It also considers stats (popularity, KD ratio) from <a href="http://masteroverwatch.com/heroes/pc/global/mode/ranked" target="_blank">Master Overwatch</a> and the missing roles on your team. Use this before a match starts.</p>
-              <p>A higher score is better.</p>
-            </div>
-          </div>
-        ),
-        scores: getTeamPicksByHardCounterPrime(counters, heros, herosRanks, nonEmptyPicks),
-      },
-      {
-        title: 'Counters based on your team + Flexible Missing Roles (3 Tank, 3 DPS) + Master Overwatch Stats',
-        description: (
-          <div className="Description">
-            <div className="Overview">Input: Your Team, Output: Your Team</div>
-            <div className="Details">
-              <p>This recommends heros that counter widest variety of enemies. It also considers stats (popularity, KD ratio) from <a href="http://masteroverwatch.com/heroes/pc/global/mode/ranked" target="_blank">Master Overwatch</a> and the missing roles on your team. Assumes you want 3 tanks and 3 DPS heroes. Use this before a match starts.</p>
-              <p>A higher score is better.</p>
-            </div>
-          </div>
-        ),
-        scores: getTeamPicksByHardCounterFlexRoles(counters, heros, herosRanks, nonEmptyPicks, {tank: 3, dps: 3, support: 0}),
-      },
-      {
-        title: 'Counters based on your team + Flexible Missing Roles (2 Tank, 2 DPS, 2 Support) + Master Overwatch Stats',
-        description: (
-          <div className="Description">
-            <div className="Overview">Input: Your Team, Output: Your Team</div>
-            <div className="Details">
-              <p>This recommends heros that counter widest variety of enemies. It also considers stats (popularity, KD ratio) from <a href="http://masteroverwatch.com/heroes/pc/global/mode/ranked" target="_blank">Master Overwatch</a> and the missing roles on your team. Assumes you want 2 tanks, 2 supports, and 3 DPS heroes. Use this before a match starts.</p>
-              <p>A higher score is better.</p>
-            </div>
-          </div>
-        ),
-        scores: getTeamPicksByHardCounterFlexRoles(counters, heros, herosRanks, nonEmptyPicks, {tank: 2, dps: 2, support: 2}),
-      },
     ];
 
     this.setState({algorithms, isLoading: false});
   }, 500);
 
+
+  renderEnemyTeam() {
+    return (
+      <div className="EnemyTeam">
+        {range(6).map((i) => {
+          const name = this.state.enemyPicks[i];
+          return <HeroIcon name={name} key={i} onClick={() => this.removePickAtIndex(i)} />;
+        })}
+      </div>
+    );
+  }
+
   renderPicker() {
     return (
       <div>
         <div className="Section">
-          <div className="EnemyTeam">
-            {range(6).map((i) => {
-              const name = this.state.enemyPicks[i];
-              return <HeroIcon name={name} key={i} onClick={() => this.removePickAtIndex(i)} />;
-            })}
-          </div>
+          {this.renderEnemyTeam()}
         </div>
         <div className="Section">
           <div className="SectionTitle">
@@ -199,10 +154,9 @@ export default class Calculator extends Component {
   renderResults() {
     return (
       <div>
+        {this.renderEnemyTeam()}
         {this.state.algorithms.map((algorithm) => (
           <div key={algorithm.title} className="Algorithm">
-            <div className="Title">{algorithm.title}</div>
-            {algorithm.description}
             <ResultsContainer title={algorithm.title} scores={algorithm.scores} />
           </div>
         ))}
