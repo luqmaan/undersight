@@ -2,7 +2,7 @@ import {
   getTopScores,
   getTopFour,
   getRolePicks,
-  getHeroCounters,
+  getCounterTo,
   getTeamPicksByHardCounter,
   getTeamPicksByHardCounterPrime,
   getTeamPicksByHardCounterFlexRoles,
@@ -40,9 +40,9 @@ describe('undersight', () => {
     });
   });
 
-  describe('getHeroCounters', () => {
+  describe('getCounterTo', () => {
     it('should return counters sorted by score desc', () => {
-      expect(getHeroCounters(allCountersJSON, 'Pharah')).toMatchSnapshot();
+      expect(getCounterTo(allCountersJSON, 'Pharah')).toMatchSnapshot();
     });
   });
 

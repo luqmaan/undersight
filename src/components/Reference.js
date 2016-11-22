@@ -46,7 +46,7 @@ export default class Reference extends Component {
               )}
             </div>
             <div className="Action Center">
-              {heroName || 'All Heros'}
+              {!heroName && 'All Heros'}
             </div>
             <div className="Action Right">
             </div>

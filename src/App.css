@@ -20,6 +20,7 @@
   font-size: 1em;
   color: rgb(83, 106, 194);
   text-decoration: none;
+  padding: 5px;
 }
 
 .Topbar .Action.disabled {
@@ -32,6 +33,7 @@
 }
 
 .Topbar .Center {
+  padding: 5px;
   flex: 1;
 }
 
@@ -47,6 +49,7 @@
   display: flex;
   background-color: rgba(255, 255, 255, 1) !important;
   border-top: 1px solid rgba(206, 203, 207, 1);
+  box-shadow: 0 0 5px rgba(189, 187, 191, 0.4);
 }
 .Bottombar a {
   color: rgba(206, 203, 207, 1);

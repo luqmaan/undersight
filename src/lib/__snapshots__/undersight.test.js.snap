@@ -1,4 +1,4 @@
-exports[`undersight getHeroCounters should return counters sorted by score desc 1`] = `
+exports[`undersight getCounterTo should return counters sorted by score desc 1`] = `
 Array [
   Object {
     "enemy": "Zarya",

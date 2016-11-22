@@ -1,0 +1,64 @@
+
+
+.HeroIcon {
+  display: flex;
+  width: 55px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 5px;
+}
+.HeroIcon.Huge {
+  width: 100px;
+  padding: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.HeroIconName {
+  margin-top: 1px;
+  font-size: 0.6em;
+  white-space: pre;
+}
+.Huge .HeroIconName {
+  font-size: 1.1em;
+  color: rgb(83, 106, 194);
+}
+.Missing .HeroIconName {
+  color: #b1aeb2;
+}
+.HeroIconImage {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #cecbcf;
+  border-radius: 50%;
+  background: #f8f7f9;
+  overflow: hidden;
+
+}
+.Huge .HeroIconImage {
+  width: 90px;
+  height: 90px;
+  border-width: 3px;
+}
+
+.Missing .HeroIconImage {
+  border-style: dashed;
+  border-color: #cecbcf;
+}
+.HeroIcon img {
+  max-height: 100%;
+  width: auto;
+}
+
+.HeroIcon.Clickable:hover {
+  background: #f0f0f1;
+}
+.HeroIcon.Clickable:active, .HeroIcon.Clickable:focus {
+  background: #cecbcf;
+}
+.HeroIcon.Clickable:focus .Missing .HeroIconName  {
+  color: #b1aeb2;
+}
