@@ -170,7 +170,7 @@ export default class Calculator extends Component {
         <div className="Topbar">
           <div className="Action Left">
             {!this.state.showResults && (compact(this.state.enemyPicks).length > 0) && (
-              <button onClick={() => this.clearAllPicks()}>
+              <button className="Red" onClick={() => this.clearAllPicks()}>
                 Clear All
               </button>
             )}

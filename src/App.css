@@ -22,6 +22,9 @@
   text-decoration: none;
   padding: 5px;
 }
+.Topbar .Action button.Red {
+  color: rgb(232, 115, 104);
+}
 
 .Topbar .Action.disabled {
   color: rgba(206, 203, 207, 1);
