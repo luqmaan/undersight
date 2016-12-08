@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "http://luqmaan.github.io/undersight",
   "devDependencies": {
-    "react-scripts": "^0.7.0",
-    "gh-pages": "^0.11.0"
+    "gh-pages": "^0.11.0",
+    "react-scripts": "^0.7.0"
   },
   "dependencies": {
     "classnames": "^2.2.5",
@@ -22,7 +22,8 @@
     "react-router": "^4.0.0-alpha.5",
     "react-select": "^1.0.0-rc.2",
     "rebass": "^0.3.3",
-    "scroll-to": "0.0.2"
+    "scroll-to": "0.0.2",
+    "victory": "^0.14.0"
   },
   "scripts": {
     "start": "react-scripts start",

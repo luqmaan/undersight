@@ -74,17 +74,11 @@ export default class ResultsContainer extends Component {
       <div className="ResultsContainer">
         {this.state.algorithms.map(({scores, title}) => (
           <div key={title} className="Algorithm">
-            <div className="ResultsTitle">{title}</div>
             <div className="ResultsGrid">
               {scores.length > 0 && (
-                <Results title="Use" scores={take(scores, 7)} />
+                <Results title={title} scores={scores} />
               )}
-              {scores.length > 0 && (
-                <Results
-                  title="Avoid"
-                  scores={take(scores.reverse().filter((score) => !isSupport(heros, score.name)), 7)}
-                />
-              )}
+
             </div>
           </div>
         ))}

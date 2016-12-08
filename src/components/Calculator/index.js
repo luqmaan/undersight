@@ -25,6 +25,8 @@ export default class Calculator extends Component {
       yourTeam: new Array(6),
       showResults: false,
       showPickerModal: false,
+      enemyTeam: ['Reaper', 'Tracer', 'Pharah', 'Winston', null, null],
+      showResults: true,
     };
   }
 
